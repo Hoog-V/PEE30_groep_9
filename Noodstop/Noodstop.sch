@@ -1,0 +1,480 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Noodstop-rescue:MSP430FR2476TPTR-SamacSys_Parts IC?
+U 1 1 617B1AE3
+P 1600 2725
+F 0 "IC?" H 5444 1971 50  0000 L CNN
+F 1 "MSP430FR2476TPTR" H 5444 1880 50  0000 L CNN
+F 2 "QFP50P900X900X160-48N" H 5250 4325 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/MSP430FR2476" H 5250 4225 50  0001 L CNN
+F 4 "16 MHz ultra-low-power microcontroller with 64 KB FRAM, 8 KB RAM, 12-bit ADC, 43 IO, 5 16-bit timers" H 5250 4125 50  0001 L CNN "Description"
+F 5 "1.6" H 5250 4025 50  0001 L CNN "Height"
+F 6 "595-MSP430FR2476TPTR" H 5250 3925 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/MSP430FR2476TPTR/?qs=vLWxofP3U2yi4%2F%252BXDj0bzg%3D%3D" H 5250 3825 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 5250 3725 50  0001 L CNN "Manufacturer_Name"
+F 9 "MSP430FR2476TPTR" H 5250 3625 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1600 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 617B5115
+P 850 2725
+F 0 "#PWR?" H 850 2575 50  0001 C CNN
+F 1 "+3.3V" V 865 2853 50  0000 L CNN
+F 2 "" H 850 2725 50  0001 C CNN
+F 3 "" H 850 2725 50  0001 C CNN
+	1    850  2725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 617B570F
+P 1050 2500
+F 0 "C?" V 821 2500 50  0000 C CNN
+F 1 "10u" V 912 2500 50  0000 C CNN
+F 2 "" H 1050 2500 50  0001 C CNN
+F 3 "~" H 1050 2500 50  0001 C CNN
+	1    1050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 617B5CE4
+P 1475 2500
+F 0 "C?" V 1246 2500 50  0000 C CNN
+F 1 "100n" V 1337 2500 50  0000 C CNN
+F 2 "" H 1475 2500 50  0001 C CNN
+F 3 "~" H 1475 2500 50  0001 C CNN
+	1    1475 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 2725 1575 2725
+$Comp
+L power:GND #PWR?
+U 1 1 617B69D7
+P 1375 2500
+F 0 "#PWR?" H 1375 2250 50  0001 C CNN
+F 1 "GND" H 1380 2327 50  0000 C CNN
+F 2 "" H 1375 2500 50  0001 C CNN
+F 3 "" H 1375 2500 50  0001 C CNN
+	1    1375 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617B6DEB
+P 950 2500
+F 0 "#PWR?" H 950 2250 50  0001 C CNN
+F 1 "GND" H 955 2327 50  0000 C CNN
+F 2 "" H 950 2500 50  0001 C CNN
+F 3 "" H 950 2500 50  0001 C CNN
+	1    950  2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2500 1150 2725
+Wire Wire Line
+	1575 2500 1575 2725
+Connection ~ 1575 2725
+Connection ~ 1150 2725
+Wire Wire Line
+	1150 2725 1575 2725
+Wire Wire Line
+	850  2725 1150 2725
+$Comp
+L power:GND #PWR?
+U 1 1 617BB5BB
+P 2700 875
+F 0 "#PWR?" H 2700 625 50  0001 C CNN
+F 1 "GND" H 2705 702 50  0000 C CNN
+F 2 "" H 2700 875 50  0001 C CNN
+F 3 "" H 2700 875 50  0001 C CNN
+	1    2700 875 
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 7000 0    50   Input ~ 0
+MCURST-SWBTDIO
+$Comp
+L Device:C C?
+U 1 1 617BD6F5
+P 2650 7150
+F 0 "C?" H 2765 7196 50  0000 L CNN
+F 1 "1nF" H 2765 7105 50  0000 L CNN
+F 2 "" H 2688 7000 50  0001 C CNN
+F 3 "~" H 2650 7150 50  0001 C CNN
+	1    2650 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 617BDAC0
+P 2875 6850
+F 0 "R?" H 2945 6896 50  0000 L CNN
+F 1 "47k" H 2945 6805 50  0000 L CNN
+F 2 "" V 2805 6850 50  0001 C CNN
+F 3 "~" H 2875 6850 50  0001 C CNN
+	1    2875 6850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 7000
+Wire Wire Line
+	2650 7000 2500 7000
+Connection ~ 2875 7000
+Wire Wire Line
+	2875 7000 2650 7000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 617BF3B2
+P 2875 6700
+F 0 "#PWR?" H 2875 6550 50  0001 C CNN
+F 1 "+3.3V" H 2890 6873 50  0000 C CNN
+F 2 "" H 2875 6700 50  0001 C CNN
+F 3 "" H 2875 6700 50  0001 C CNN
+	1    2875 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617BF964
+P 2650 7300
+F 0 "#PWR?" H 2650 7050 50  0001 C CNN
+F 1 "GND" H 2655 7127 50  0000 C CNN
+F 2 "" H 2650 7300 50  0001 C CNN
+F 3 "" H 2650 7300 50  0001 C CNN
+	1    2650 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617BFDC1
+P 3700 7200
+F 0 "#PWR?" H 3700 6950 50  0001 C CNN
+F 1 "GND" H 3705 7027 50  0000 C CNN
+F 2 "" H 3700 7200 50  0001 C CNN
+F 3 "" H 3700 7200 50  0001 C CNN
+	1    3700 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 7200 3700 7000
+Wire Wire Line
+	2875 7000 3300 7000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 617C17D1
+P 3500 7000
+F 0 "SW?" H 3500 7285 50  0000 C CNN
+F 1 "Reset knop" H 3500 7194 50  0000 C CNN
+F 2 "" H 3500 7200 50  0001 C CNN
+F 3 "~" H 3500 7200 50  0001 C CNN
+	1    3500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 617C43E5
+P 1250 7250
+F 0 "#PWR?" H 1250 7100 50  0001 C CNN
+F 1 "+3.3V" H 1265 7423 50  0000 C CNN
+F 2 "" H 1250 7250 50  0001 C CNN
+F 3 "" H 1250 7250 50  0001 C CNN
+	1    1250 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 7350 0    50   Input ~ 0
+MCURST-SWBTDIO
+Text GLabel 1250 7450 0    50   Input ~ 0
+SBWTCK
+$Comp
+L power:GND #PWR?
+U 1 1 617C4F49
+P 1250 7550
+F 0 "#PWR?" H 1250 7300 50  0001 C CNN
+F 1 "GND" H 1255 7377 50  0000 C CNN
+F 2 "" H 1250 7550 50  0001 C CNN
+F 3 "" H 1250 7550 50  0001 C CNN
+	1    1250 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 617C6643
+P 1450 7450
+F 0 "J?" H 1422 7332 50  0000 R CNN
+F 1 "Programmeer header" H 1422 7423 50  0000 R CNN
+F 2 "" H 1450 7450 50  0001 C CNN
+F 3 "~" H 1450 7450 50  0001 C CNN
+	1    1450 7450
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5400 3225
+Text GLabel 1600 2825 0    50   Input ~ 0
+MCURST-SWBTDIO
+Text GLabel 1600 2925 0    50   Input ~ 0
+SBWTCK
+Wire Wire Line
+	2900 925  2900 875 
+Wire Wire Line
+	2900 875  2700 875 
+$Comp
+L Device:R R?
+U 1 1 6185A9A6
+P 8500 2700
+F 0 "R?" V 8600 2700 50  0000 R CNN
+F 1 "1k" V 8600 2800 50  0000 R CNN
+F 2 "" V 8430 2700 50  0001 C CNN
+F 3 "~" H 8500 2700 50  0001 C CNN
+	1    8500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6185D106
+P 7800 3900
+F 0 "R?" H 7730 3854 50  0000 R CNN
+F 1 "10K" H 7730 3945 50  0000 R CNN
+F 2 "" V 7730 3900 50  0001 C CNN
+F 3 "~" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6186028E
+P 7800 4300
+F 0 "#PWR?" H 7800 4150 50  0001 C CNN
+F 1 "+3.3V" H 7815 4473 50  0000 C CNN
+F 2 "" H 7800 4300 50  0001 C CNN
+F 3 "" H 7800 4300 50  0001 C CNN
+	1    7800 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 4300 7800 4050
+Wire Wire Line
+	7400 2400 7400 2300
+Wire Wire Line
+	8350 2600 8350 2700
+Wire Wire Line
+	7800 3700 7800 3750
+Wire Wire Line
+	8650 2700 8750 2700
+$Comp
+L Isolator:PC817 U?
+U 1 1 61886B15
+P 9500 2500
+F 0 "U?" H 9500 2825 50  0000 C CNN
+F 1 "PC817" H 9500 2734 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 9300 2300 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 9500 2500 50  0001 L CNN
+	1    9500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618881B3
+P 10350 2400
+F 0 "#PWR?" H 10350 2250 50  0001 C CNN
+F 1 "+3.3V" V 10365 2528 50  0000 L CNN
+F 2 "" H 10350 2400 50  0001 C CNN
+F 3 "" H 10350 2400 50  0001 C CNN
+	1    10350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61888D47
+P 10050 2400
+F 0 "R?" V 9843 2400 50  0000 C CNN
+F 1 "1k" V 9934 2400 50  0000 C CNN
+F 2 "" V 9980 2400 50  0001 C CNN
+F 3 "~" H 10050 2400 50  0001 C CNN
+	1    10050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 2400 9850 2400
+$Comp
+L power:Earth #PWR?
+U 1 1 6188D18D
+P 9200 2800
+F 0 "#PWR?" H 9200 2550 50  0001 C CNN
+F 1 "Earth" H 9200 2650 50  0001 C CNN
+F 2 "" H 9200 2800 50  0001 C CNN
+F 3 "~" H 9200 2800 50  0001 C CNN
+	1    9200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2600 9200 2800
+Wire Wire Line
+	10350 2400 10200 2400
+$Comp
+L Switch:SW_Push_Open_Dual SW?
+U 1 1 61899057
+P 8150 2400
+F 0 "SW?" H 8150 2610 50  0000 C CNN
+F 1 "Noodstop knop" H 8150 2519 50  0000 C CNN
+F 2 "" H 8150 2600 50  0001 C CNN
+F 3 "~" H 8150 2600 50  0001 C CNN
+	1    8150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2600 7950 2600
+Wire Wire Line
+	7950 2400 7600 2400
+Connection ~ 7800 3700
+Wire Wire Line
+	7800 3700 8350 3700
+Connection ~ 8350 2600
+Wire Wire Line
+	8350 2600 9000 2600
+$Comp
+L power:Earth #PWR?
+U 1 1 618983DA
+P 9800 2600
+F 0 "#PWR?" H 9800 2350 50  0001 C CNN
+F 1 "Earth" H 9800 2450 50  0001 C CNN
+F 2 "" H 9800 2600 50  0001 C CNN
+F 3 "~" H 9800 2600 50  0001 C CNN
+	1    9800 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 9850 2400
+Wire Wire Line
+	9850 2400 9800 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6189BB30
+P 8750 2700
+F 0 "#PWR?" H 8750 2550 50  0001 C CNN
+F 1 "+3.3V" V 8765 2828 50  0000 L CNN
+F 2 "" H 8750 2700 50  0001 C CNN
+F 3 "" H 8750 2700 50  0001 C CNN
+	1    8750 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 618A25E7
+P 7750 2600
+F 0 "#PWR?" H 7750 2350 50  0001 C CNN
+F 1 "Earth" H 7750 2450 50  0001 C CNN
+F 2 "" H 7750 2600 50  0001 C CNN
+F 3 "~" H 7750 2600 50  0001 C CNN
+	1    7750 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 1900 2    50   Input ~ 0
+Noodstop_extern
+$Comp
+L Transistor_FET:BS170 Q?
+U 1 1 618A89BC
+P 7200 2400
+F 0 "Q?" V 7542 2400 50  0000 C CNN
+F 1 "BS170" V 7451 2400 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7400 2325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 7200 2400 50  0001 L CNN
+	1    7200 2400
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 618AD92C
+P 7000 2650
+F 0 "#PWR?" H 7000 2400 50  0001 C CNN
+F 1 "Earth" H 7000 2500 50  0001 C CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "~" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2600 7200 2650
+Wire Wire Line
+	7200 3700 7800 3700
+$Comp
+L Device:R_Small R?
+U 1 1 618B29DC
+P 7100 2650
+F 0 "R?" V 7200 2650 50  0000 C CNN
+F 1 "1k" V 6995 2650 50  0000 C CNN
+F 2 "" H 7100 2650 50  0001 C CNN
+F 3 "~" H 7100 2650 50  0001 C CNN
+	1    7100 2650
+	0    1    1    0   
+$EndComp
+Connection ~ 7200 2650
+Wire Wire Line
+	7200 2650 7200 3700
+Wire Wire Line
+	7000 2300 7000 2650
+Connection ~ 7000 2650
+$Comp
+L 74xGxx:74AUC2G32 U?
+U 1 1 618BB3D5
+P 8600 3700
+F 0 "U?" H 8850 3550 50  0000 C CNN
+F 1 "74AUC2G32" H 9000 3650 50  0000 C CNN
+F 2 "" H 8600 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 3650 8900 3650
+Wire Wire Line
+	9000 2600 9000 3650
+Wire Wire Line
+	8900 3750 9850 3750
+Wire Wire Line
+	9850 2400 9850 3750
+Wire Wire Line
+	8350 2400 9200 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618C0172
+P 8600 3600
+F 0 "#PWR?" H 8600 3450 50  0001 C CNN
+F 1 "+3.3V" H 8500 3800 50  0000 L CNN
+F 2 "" H 8600 3600 50  0001 C CNN
+F 3 "" H 8600 3600 50  0001 C CNN
+	1    8600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 618C386C
+P 8600 3800
+F 0 "#PWR?" H 8600 3550 50  0001 C CNN
+F 1 "Earth" H 8600 3650 50  0001 C CNN
+F 2 "" H 8600 3800 50  0001 C CNN
+F 3 "~" H 8600 3800 50  0001 C CNN
+	1    8600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1900 7600 1900
+Wire Wire Line
+	7600 1900 7600 2400
+Connection ~ 7600 2400
+Wire Wire Line
+	7600 2400 7400 2400
+$EndSCHEMATC

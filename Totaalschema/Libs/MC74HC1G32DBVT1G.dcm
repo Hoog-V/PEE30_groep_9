@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MC74HC1G32DBVT1G
+D Logic Gates Single 2-Input OR Gate
+K
+F https://www.arrow.com/en/products/mc74hc1g32dbvt1g/on-semiconductor
+$ENDCMP
+#
+#End Doc Library

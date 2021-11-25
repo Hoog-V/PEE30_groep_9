@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/Libs/eec.lib)(options "")(descr ""))
+  (lib (name Totaalschema-rescue)(type Legacy)(uri ${KIPRJMOD}/Totaalschema-rescue.lib)(options "")(descr ""))
+  (lib (name 2021-11-05_20-48-27)(type Legacy)(uri ${KIPRJMOD}/Libs/2021-11-05_20-48-27.lib)(options "")(descr ""))
+  (lib (name LTV-846)(type Legacy)(uri ${KIPRJMOD}/Libs/LTV-846.lib)(options "")(descr ""))
+  (lib (name INA2180A1IDGKR)(type Legacy)(uri ${KIPRJMOD}/Libs/INA2180A1IDGKR.lib)(options "")(descr ""))
+  (lib (name 2021-11-20_15-16-38)(type Legacy)(uri ${KIPRJMOD}/Libs/2021-11-20_15-16-38.lib)(options "")(descr ""))
+  (lib (name 2021-11-20_15-23-40)(type Legacy)(uri ${KIPRJMOD}/Libs/2021-11-20_15-23-40.lib)(options "")(descr ""))
+  (lib (name ISO6721QDWVRQ1)(type Legacy)(uri ${KIPRJMOD}/Libs/ISO6721QDWVRQ1.lib)(options "")(descr ""))
+)

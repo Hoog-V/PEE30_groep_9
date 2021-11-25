@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +3.3V_IO1
+D Power symbol creates a global label with name "+3.3VP"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_IO2
+D Power symbol creates a global label with name "+3.3VP"
+K power-flag
+$ENDCMP
+#
+$CMP Transformer_1P_2S_WE_750313973
+D Transformer, single primary, dual secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+#End Doc Library
