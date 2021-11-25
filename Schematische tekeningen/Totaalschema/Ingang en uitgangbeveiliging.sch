@@ -18,10 +18,10 @@ L Device:C_Small C2
 U 1 1 61891674
 P 925 1375
 AR Path="/61891674" Ref="C2"  Part="1" 
-AR Path="/618861AB/61891674" Ref="C?"  Part="1" 
-F 0 "C?" V 875 1475 50  0000 C CNN
+AR Path="/618861AB/61891674" Ref="C5"  Part="1" 
+F 0 "C5" V 875 1475 50  0000 C CNN
 F 1 "100n" V 800 1400 50  0000 C CNN
-F 2 "" H 925 1375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 925 1375 50  0001 C CNN
 F 3 "~" H 925 1375 50  0001 C CNN
 	1    925  1375
 	0    1    1    0   
@@ -54,12 +54,12 @@ VSS
 Wire Wire Line
 	1025 1425 1325 1425
 $Comp
-L 2021-11-20_15-23-40:MAX14933ASE+T U?
+L 2021-11-20_15-23-40:MAX14933ASE+T U2
 U 1 1 619B095B
 P 1325 1225
-F 0 "U?" H 2225 1612 60  0000 C CNN
+F 0 "U2" H 2225 1612 60  0000 C CNN
 F 1 "MAX14933ASE+T" H 2225 1506 60  0000 C CNN
-F 2 "21-0041_S16+1_MXM" H 2225 1465 60  0001 C CNN
+F 2 "eec:MAX14933ASE&plus_T" H 2225 1465 60  0001 C CNN
 F 3 "" H 1325 1225 60  0000 C CNN
 	1    1325 1225
 	1    0    0    -1  
@@ -79,23 +79,23 @@ Wire Notes Line
 Text Notes 5725 725  0    118  ~ 24
 UART Isolatie
 $Comp
-L Device:R_Small R?
+L Device:R_Small R12
 U 1 1 619A7D62
 P 3275 1675
-F 0 "R?" V 3200 1700 39  0000 C CNN
+F 0 "R12" V 3200 1700 39  0000 C CNN
 F 1 "10k" V 3275 1675 39  0000 C CNN
-F 2 "" H 3275 1675 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3275 1675 50  0001 C CNN
 F 3 "~" H 3275 1675 50  0001 C CNN
 	1    3275 1675
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R13
 U 1 1 619A9AB5
 P 3300 1800
-F 0 "R?" V 3350 1800 39  0000 C CNN
+F 0 "R13" V 3350 1800 39  0000 C CNN
 F 1 "10k" V 3300 1800 39  0000 C CNN
-F 2 "" H 3300 1800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3300 1800 50  0001 C CNN
 F 3 "~" H 3300 1800 50  0001 C CNN
 	1    3300 1800
 	0    1    1    0   
@@ -132,10 +132,10 @@ L Device:C_Small C3
 U 1 1 61891659
 P 3400 1400
 AR Path="/61891659" Ref="C3"  Part="1" 
-AR Path="/618861AB/61891659" Ref="C?"  Part="1" 
-F 0 "C?" H 3525 1400 50  0000 C CNN
+AR Path="/618861AB/61891659" Ref="C6"  Part="1" 
+F 0 "C6" H 3525 1400 50  0000 C CNN
 F 1 "100n" H 3225 1400 50  0000 C CNN
-F 2 "" H 3400 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3400 1400 50  0001 C CNN
 F 3 "~" H 3400 1400 50  0001 C CNN
 	1    3400 1400
 	-1   0    0    1   
@@ -147,23 +147,23 @@ Wire Wire Line
 Wire Wire Line
 	3200 1425 3125 1425
 $Comp
-L Device:R_Small R?
+L Device:R_Small R6
 U 1 1 619D40A3
 P 1175 1550
-F 0 "R?" V 1225 1650 39  0000 C CNN
+F 0 "R6" V 1225 1650 39  0000 C CNN
 F 1 "10k" V 1175 1550 39  0000 C CNN
-F 2 "" H 1175 1550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1175 1550 50  0001 C CNN
 F 3 "~" H 1175 1550 50  0001 C CNN
 	1    1175 1550
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R7
 U 1 1 619D46F5
 P 1175 1675
-F 0 "R?" V 1200 1775 39  0000 C CNN
+F 0 "R7" V 1200 1775 39  0000 C CNN
 F 1 "10k" V 1175 1675 39  0000 C CNN
-F 2 "" H 1175 1675 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1175 1675 50  0001 C CNN
 F 3 "~" H 1175 1675 50  0001 C CNN
 	1    1175 1675
 	0    1    1    0   
@@ -197,12 +197,12 @@ VCC
 Wire Wire Line
 	1050 1550 1075 1550
 $Comp
-L ISO6721QDWVRQ1:ISO6721QDWVRQ1 IC?
+L ISO6721QDWVRQ1:ISO6721QDWVRQ1 IC2
 U 1 1 619DF44C
 P 5650 1325
-F 0 "IC?" H 6200 1590 50  0000 C CNN
+F 0 "IC2" H 6200 1590 50  0000 C CNN
 F 1 "ISO6721QDWVRQ1" H 6200 1499 50  0000 C CNN
-F 2 "SOIC127P1150X280-8N" H 6600 1425 50  0001 L CNN
+F 2 "eec:SOIC127P1150X280-8N" H 6600 1425 50  0001 L CNN
 F 3 "https://www.ti.com/lit/gpn/iso6721-q1" H 6600 1325 50  0001 L CNN
 F 4 "Digital Isolators Automotive, general-purpose, dual-channel, 1/1 digital isolator" H 6600 1225 50  0001 L CNN "Description"
 F 5 "2.8" H 6600 1125 50  0001 L CNN "Height"
@@ -231,10 +231,10 @@ L Device:C_Small C?
 U 1 1 619E2D2F
 P 7175 1225
 AR Path="/619E2D2F" Ref="C?"  Part="1" 
-AR Path="/618861AB/619E2D2F" Ref="C?"  Part="1" 
-F 0 "C?" H 7300 1225 50  0000 C CNN
+AR Path="/618861AB/619E2D2F" Ref="C8"  Part="1" 
+F 0 "C8" H 7300 1225 50  0000 C CNN
 F 1 "100n" H 7000 1225 50  0000 C CNN
-F 2 "" H 7175 1225 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7175 1225 50  0001 C CNN
 F 3 "~" H 7175 1225 50  0001 C CNN
 	1    7175 1225
 	-1   0    0    1   
@@ -246,10 +246,10 @@ L Device:C_Small C?
 U 1 1 619E5AEE
 P 5250 1275
 AR Path="/619E5AEE" Ref="C?"  Part="1" 
-AR Path="/618861AB/619E5AEE" Ref="C?"  Part="1" 
-F 0 "C?" V 5200 1375 50  0000 C CNN
+AR Path="/618861AB/619E5AEE" Ref="C7"  Part="1" 
+F 0 "C7" V 5200 1375 50  0000 C CNN
 F 1 "100n" V 5125 1300 50  0000 C CNN
-F 2 "" H 5250 1275 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5250 1275 50  0001 C CNN
 F 3 "~" H 5250 1275 50  0001 C CNN
 	1    5250 1275
 	0    1    1    0   
@@ -282,10 +282,10 @@ Wire Notes Line
 Text Notes 8575 750  0    118  ~ 24
 TTL Isolatie (Verzendkant)
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U6
 U 1 1 619FB6E2
 P 9775 1425
-F 0 "U?" H 9775 1750 50  0000 C CNN
+F 0 "U6" H 9775 1750 50  0000 C CNN
 F 1 "PC817" H 9775 1659 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 9575 1225 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 9775 1425 50  0001 L CNN
@@ -299,10 +299,10 @@ Wire Notes Line
 Text Notes 1200 2625 0    118  ~ 24
 TTL Isolatie (Ontvangkant)
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U5
 U 1 1 61A04A84
 P 2925 3650
-F 0 "U?" H 2925 3975 50  0000 C CNN
+F 0 "U5" H 2925 3975 50  0000 C CNN
 F 1 "PC817" H 2925 3884 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 2725 3450 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2925 3650 50  0001 L CNN
@@ -310,23 +310,23 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2925 3650 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R14
 U 1 1 61A0AE0B
 P 3325 3550
-F 0 "R?" V 3521 3550 50  0000 C CNN
+F 0 "R14" V 3521 3550 50  0000 C CNN
 F 1 "1k" V 3430 3550 50  0000 C CNN
-F 2 "" H 3325 3550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3325 3550 50  0001 C CNN
 F 3 "~" H 3325 3550 50  0001 C CNN
 	1    3325 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R11
 U 1 1 61A0D471
 P 2625 3450
-F 0 "R?" H 2567 3404 50  0000 R CNN
+F 0 "R11" H 2567 3404 50  0000 R CNN
 F 1 "1k" H 2567 3495 50  0000 R CNN
-F 2 "" H 2625 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2625 3450 50  0001 C CNN
 F 3 "~" H 2625 3450 50  0001 C CNN
 	1    2625 3450
 	1    0    0    1   
@@ -334,10 +334,10 @@ $EndComp
 Text HLabel 2625 3350 1    50   UnSpc ~ 0
 VCC
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U3
 U 1 1 61A14519
 P 1450 3250
-F 0 "U?" H 1450 3575 50  0000 C CNN
+F 0 "U3" H 1450 3575 50  0000 C CNN
 F 1 "PC817" H 1450 3484 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 1250 3050 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1450 3250 50  0001 L CNN
@@ -345,23 +345,23 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1450 3250 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R9
 U 1 1 61A1451F
 P 1850 3150
-F 0 "R?" V 2046 3150 50  0000 C CNN
+F 0 "R9" V 2046 3150 50  0000 C CNN
 F 1 "1k" V 1955 3150 50  0000 C CNN
-F 2 "" H 1850 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1850 3150 50  0001 C CNN
 F 3 "~" H 1850 3150 50  0001 C CNN
 	1    1850 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 61A14525
 P 1150 3050
-F 0 "R?" H 1092 3004 50  0000 R CNN
+F 0 "R5" H 1092 3004 50  0000 R CNN
 F 1 "1k" H 1092 3095 50  0000 R CNN
-F 2 "" H 1150 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1150 3050 50  0001 C CNN
 F 3 "~" H 1150 3050 50  0001 C CNN
 	1    1150 3050
 	1    0    0    1   
@@ -369,10 +369,10 @@ $EndComp
 Text HLabel 1150 2950 1    50   UnSpc ~ 0
 VCC
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U4
 U 1 1 61A1553A
 P 1575 4075
-F 0 "U?" H 1575 4400 50  0000 C CNN
+F 0 "U4" H 1575 4400 50  0000 C CNN
 F 1 "PC817" H 1575 4309 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 1375 3875 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1575 4075 50  0001 L CNN
@@ -380,23 +380,23 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1575 4075 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R10
 U 1 1 61A15540
 P 1975 3975
-F 0 "R?" V 2171 3975 50  0000 C CNN
+F 0 "R10" V 2171 3975 50  0000 C CNN
 F 1 "1k" V 2080 3975 50  0000 C CNN
-F 2 "" H 1975 3975 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1975 3975 50  0001 C CNN
 F 3 "~" H 1975 3975 50  0001 C CNN
 	1    1975 3975
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R8
 U 1 1 61A15546
 P 1275 3875
-F 0 "R?" H 1217 3829 50  0000 R CNN
+F 0 "R8" H 1217 3829 50  0000 R CNN
 F 1 "1k" H 1217 3920 50  0000 R CNN
-F 2 "" H 1275 3875 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1275 3875 50  0001 C CNN
 F 3 "~" H 1275 3875 50  0001 C CNN
 	1    1275 3875
 	1    0    0    1   
@@ -428,12 +428,12 @@ Start_MCU
 Text HLabel 2075 3975 2    49   Input ~ 0
 Status_MCU
 $Comp
-L Device:R_Small R?
+L Device:R_Small R15
 U 1 1 61A4AED4
 P 9375 1325
-F 0 "R?" V 9571 1325 50  0000 C CNN
+F 0 "R15" V 9571 1325 50  0000 C CNN
 F 1 "1k" V 9480 1325 50  0000 C CNN
-F 2 "" H 9375 1325 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9375 1325 50  0001 C CNN
 F 3 "~" H 9375 1325 50  0001 C CNN
 	1    9375 1325
 	0    -1   -1   0   
@@ -443,12 +443,12 @@ Status_aandrijving
 Text HLabel 9475 1525 0    50   UnSpc ~ 0
 VSS
 $Comp
-L Device:R_Small R?
+L Device:R_Small R17
 U 1 1 61A4CE30
 P 10075 1225
-F 0 "R?" H 10134 1271 50  0000 L CNN
+F 0 "R17" H 10134 1271 50  0000 L CNN
 F 1 "1k" H 10134 1180 50  0000 L CNN
-F 2 "" H 10075 1225 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10075 1225 50  0001 C CNN
 F 3 "~" H 10075 1225 50  0001 C CNN
 	1    10075 1225
 	1    0    0    -1  
@@ -460,10 +460,10 @@ VSS_ISO
 Text HLabel 10075 1325 2    49   Input ~ 0
 Status_aandrijving_ISO_M
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U7
 U 1 1 61A518F7
 P 9775 2025
-F 0 "U?" H 9775 2350 50  0000 C CNN
+F 0 "U7" H 9775 2350 50  0000 C CNN
 F 1 "PC817" H 9775 2259 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 9575 1825 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 9775 2025 50  0001 L CNN
@@ -471,12 +471,12 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 9775 2025 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R16
 U 1 1 61A518FD
 P 9375 1925
-F 0 "R?" V 9571 1925 50  0000 C CNN
+F 0 "R16" V 9571 1925 50  0000 C CNN
 F 1 "1k" V 9480 1925 50  0000 C CNN
-F 2 "" H 9375 1925 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9375 1925 50  0001 C CNN
 F 3 "~" H 9375 1925 50  0001 C CNN
 	1    9375 1925
 	0    -1   -1   0   
@@ -486,12 +486,12 @@ Status_aandrijving
 Text HLabel 9475 2125 0    50   UnSpc ~ 0
 VSS
 $Comp
-L Device:R_Small R?
+L Device:R_Small R18
 U 1 1 61A51905
 P 10075 1825
-F 0 "R?" H 10134 1871 50  0000 L CNN
+F 0 "R18" H 10134 1871 50  0000 L CNN
 F 1 "1k" H 10134 1780 50  0000 L CNN
-F 2 "" H 10075 1825 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10075 1825 50  0001 C CNN
 F 3 "~" H 10075 1825 50  0001 C CNN
 	1    10075 1825
 	1    0    0    -1  

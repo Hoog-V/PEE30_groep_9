@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name eec)(type KiCad)(uri ${KIPRJMOD}/Libs/eec.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/Libs/footprints.pretty)(options "")(descr ""))
+  (lib (name Libs)(type KiCad)(uri ${KIPRJMOD}/Libs.pretty)(options "")(descr ""))
+)
