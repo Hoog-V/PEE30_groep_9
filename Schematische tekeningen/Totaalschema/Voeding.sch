@@ -14,50 +14,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L eec:LT8301IS5TRPBF U8
-U 1 1 6186DB9F
-P 3925 2600
-F 0 "U8" H 4525 2865 50  0000 C CNN
-F 1 "LT8301IS5TRPBF" H 4525 2774 39  0000 C CNN
-F 2 "eec:Linear_Technology-LT8301IS5TRPBF-Level_A" H 3925 3000 50  0001 L CNN
-F 3 "http://cds.linear.com/docs/en/datasheet/8301f.pdf" H 3925 3100 50  0001 L CNN
-F 4 "Manufacturer URL" H 3925 3200 50  0001 L CNN "Component Link 1 Description"
-F 5 "http://www.linear.com/" H 3925 3300 50  0001 L CNN "Component Link 1 URL"
-F 6 "Package Specification" H 3925 3400 50  0001 L CNN "Component Link 3 Description"
-F 7 "http://cds.linear.com/docs/en/packaging/SOT_5_05-08-1635.pdf" H 3925 3500 50  0001 L CNN "Component Link 3 URL"
-F 8 "02/2014" H 3925 3600 50  0001 L CNN "Datasheet Version"
-F 9 "1.375 A Typ." H 3925 3700 50  0001 L CNN "ISW MAX"
-F 10 "Surface Mount" H 3925 3800 50  0001 L CNN "Mounting Technology"
-F 11 "5-Pin Small Out-Line Transistor, Body 2.9 x 1.625 mm, Pitch 0.95 mm" H 3925 3900 50  0001 L CNN "Package Description"
-F 12 "06/2010" H 3925 4000 50  0001 L CNN "Package Version"
-F 13 "Tape and Reel" H 3925 4100 50  0001 L CNN "Packing"
-F 14 "0.4 Ohm Typ." H 3925 4200 50  0001 L CNN "RDS ON"
-F 15 "-40 to 125 degC" H 3925 4300 50  0001 L CNN "Temperature Range"
-F 16 "2.7 to 42 V" H 3925 4400 50  0001 L CNN "VIN"
-F 17 "IC" H 3925 4500 50  0001 L CNN "category"
-F 18 "15159575" H 3925 4600 50  0001 L CNN "ciiva ids"
-F 19 "3393e6b439a30787" H 3925 4700 50  0001 L CNN "library id"
-F 20 "Linear Technology" H 3925 4800 50  0001 L CNN "manufacturer"
-F 21 "1431326942" H 3925 4900 50  0001 L CNN "release date"
-F 22 "Yes" H 3925 5000 50  0001 L CNN "rohs"
-F 23 "73DCC253-F43D-4A2E-B540-CD101AA786C0" H 3925 5100 50  0001 L CNN "vault revision"
-F 24 "10 kHz Typ." H 3925 5200 50  0001 L CNN "f MIN"
-F 25 "yes" H 3925 5300 50  0001 L CNN "imported"
-F 26 "170 ns Typ." H 3925 5400 50  0001 L CNN "tON MIN"
-	1    3925 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5475 2600 5450 2600
-$Comp
 L Device:R_Small R22
 U 1 1 6186DBA7
-P 5475 2700
-F 0 "R22" H 5534 2746 50  0000 L CNN
-F 1 "143k" H 5534 2655 39  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5475 2700 50  0001 C CNN
-F 3 "~" H 5475 2700 50  0001 C CNN
-	1    5475 2700
+P 5405 2700
+F 0 "R22" H 5464 2746 50  0000 L CNN
+F 1 "143k" H 5464 2655 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5405 2700 50  0001 C CNN
+F 3 "~" H 5405 2700 50  0001 C CNN
+	1    5405 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -77,7 +41,7 @@ U 1 1 6186DBC7
 P 6550 2150
 F 0 "C12" H 6665 2196 50  0000 L CNN
 F 1 "85uF" H 6665 2105 39  0000 L CNN
-F 2 "" H 6588 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6588 2000 50  0001 C CNN
 F 3 "~" H 6550 2150 50  0001 C CNN
 	1    6550 2150
 	1    0    0    -1  
@@ -85,23 +49,23 @@ $EndComp
 $Comp
 L Device:R R25
 U 1 1 6186DBCE
-P 6950 2150
-F 0 "R25" H 7020 2196 50  0000 L CNN
-F 1 "390" H 7020 2105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6880 2150 50  0001 C CNN
-F 3 "~" H 6950 2150 50  0001 C CNN
-	1    6950 2150
+P 7270 2150
+F 0 "R25" H 7340 2196 50  0000 L CNN
+F 1 "390" H 7340 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7200 2150 50  0001 C CNN
+F 3 "~" H 7270 2150 50  0001 C CNN
+	1    7270 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDS #PWR039
 U 1 1 6186DBF0
-P 6950 2300
-F 0 "#PWR039" H 6950 2050 50  0001 C CNN
-F 1 "GNDS" H 6950 2150 50  0000 C CNN
-F 2 "" H 6950 2300 50  0001 C CNN
-F 3 "" H 6950 2300 50  0001 C CNN
-	1    6950 2300
+P 7270 2300
+F 0 "#PWR039" H 7270 2050 50  0001 C CNN
+F 1 "GNDS" H 7270 2150 50  0000 C CNN
+F 2 "" H 7270 2300 50  0001 C CNN
+F 3 "" H 7270 2300 50  0001 C CNN
+	1    7270 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -137,14 +101,6 @@ F 3 "~" H 3850 2900 50  0001 C CNN
 	1    3850 2900
 	1    0    0    -1  
 $EndComp
-Text HLabel 3625 2600 0    50   UnSpc ~ 0
-VCC
-Text HLabel 3625 2900 3    50   UnSpc ~ 0
-VSS
-Text HLabel 3850 3000 3    50   UnSpc ~ 0
-VSS
-Text HLabel 5025 3000 2    50   UnSpc ~ 0
-VSS
 $Comp
 L Device:D_Zener_Small D3
 U 1 1 6186DB7B
@@ -167,18 +123,9 @@ F 3 "~" V 5450 2500 50  0001 C CNN
 	1    5450 2500
 	0    1    1    0   
 $EndComp
-Connection ~ 5450 2600
 Wire Wire Line
 	6450 2000 6550 2000
-Connection ~ 6550 2000
-Wire Wire Line
-	6550 2000 6950 2000
-Wire Wire Line
-	6250 2300 6550 2300
-Connection ~ 6950 2300
-Connection ~ 6550 2300
-Wire Wire Line
-	6550 2300 6950 2300
+Connection ~ 7270 2300
 Wire Wire Line
 	3625 2600 3850 2600
 Connection ~ 3850 2600
@@ -187,21 +134,19 @@ Wire Wire Line
 Wire Wire Line
 	3850 2800 4025 2800
 Connection ~ 3850 2800
-Wire Wire Line
-	5450 2800 5475 2800
 $Comp
 L Device:R_Small R21
 U 1 1 619BE033
-P 5350 2800
-F 0 "R21" V 5275 2750 50  0000 L CNN
-F 1 "1k" V 5350 2750 39  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5350 2800 50  0001 C CNN
-F 3 "~" H 5350 2800 50  0001 C CNN
-	1    5350 2800
+P 5265 2800
+F 0 "R21" V 5190 2750 50  0000 L CNN
+F 1 "1k" V 5265 2750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5265 2800 50  0001 C CNN
+F 3 "~" H 5265 2800 50  0001 C CNN
+	1    5265 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5025 2600 5450 2600
+	5025 2600 5405 2600
 NoConn ~ 6250 2500
 NoConn ~ 6250 2800
 $Comp
@@ -221,20 +166,16 @@ U 1 1 61A48A94
 P 3725 3975
 F 0 "C10" H 3525 4025 50  0000 L CNN
 F 1 "470u" H 3475 3900 50  0000 L CNN
-F 2 "" H 3763 3825 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3763 3825 50  0001 C CNN
 F 3 "~" H 3725 3975 50  0001 C CNN
 	1    3725 3975
 	1    0    0    -1  
 $EndComp
-Text HLabel 3550 3825 0    50   UnSpc ~ 0
-VCC
 Wire Wire Line
 	4075 3825 3725 3825
 Connection ~ 3725 3825
 Wire Wire Line
 	3725 3825 3550 3825
-Text HLabel 4575 4300 3    50   UnSpc ~ 0
-VSS
 $Comp
 L Device:L L1
 U 1 1 61A51AA4
@@ -262,10 +203,6 @@ Wire Wire Line
 Connection ~ 5200 4025
 Wire Wire Line
 	5600 4025 5500 4025
-Text HLabel 5600 4325 3    50   UnSpc ~ 0
-VSS
-Text HLabel 5200 4325 3    50   UnSpc ~ 0
-VSS
 Wire Wire Line
 	4575 4225 4075 4225
 Wire Wire Line
@@ -279,7 +216,7 @@ U 1 1 61A760ED
 P 5600 4175
 F 0 "C11" H 5715 4221 50  0000 L CNN
 F 1 "220u" H 5715 4130 50  0000 L CNN
-F 2 "" H 5638 4025 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder" H 5638 4025 50  0001 C CNN
 F 3 "~" H 5600 4175 50  0001 C CNN
 	1    5600 4175
 	1    0    0    -1  
@@ -308,8 +245,6 @@ F 3 "~" H 5975 4375 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5975 4225 5975 4250
-Text HLabel 5975 4475 3    50   UnSpc ~ 0
-VSS
 Text GLabel 6025 4250 2    50   Input ~ 0
 V_FB
 Text GLabel 5075 3825 2    50   Input ~ 0
@@ -327,10 +262,92 @@ Wire Wire Line
 Wire Wire Line
 	3725 4225 4075 4225
 Connection ~ 4075 4225
-Text HLabel 5975 4025 2    50   Output ~ 0
-+3.3V
-Text HLabel 6950 2000 2    50   Output ~ 0
-+3.3V_ISO
+$Comp
+L Device:C_Small C16
+U 1 1 61AB7464
+P 6875 2140
+F 0 "C16" H 6967 2186 50  0000 L CNN
+F 1 "100n" H 6967 2095 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6875 2140 50  0001 C CNN
+F 3 "~" H 6875 2140 50  0001 C CNN
+	1    6875 2140
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 61AB79DA
+P 7145 2150
+F 0 "C17" H 7237 2196 50  0000 L CNN
+F 1 "1n" H 7237 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7145 2150 50  0001 C CNN
+F 3 "~" H 7145 2150 50  0001 C CNN
+	1    7145 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2000 6875 2000
+Connection ~ 6550 2000
+Wire Wire Line
+	6550 2300 6875 2300
+Connection ~ 6550 2300
+Wire Wire Line
+	6875 2040 6875 2000
+Connection ~ 6875 2000
+Wire Wire Line
+	6875 2000 7145 2000
+Wire Wire Line
+	6875 2240 6875 2300
+Connection ~ 6875 2300
+Wire Wire Line
+	6875 2300 7145 2300
+Wire Wire Line
+	7145 2250 7145 2300
+Connection ~ 7145 2300
+Wire Wire Line
+	7145 2300 7270 2300
+Wire Wire Line
+	7145 2050 7145 2000
+Connection ~ 7145 2000
+Wire Wire Line
+	7145 2000 7270 2000
+Wire Wire Line
+	5025 2800 5165 2800
+$Comp
+L eec:LT8301IS5TRPBF U8
+U 1 1 6186DB9F
+P 3925 2600
+F 0 "U8" H 4525 2865 50  0000 C CNN
+F 1 "LT8301IS5TRPBF" H 4525 2774 39  0000 C CNN
+F 2 "eec:Linear_Technology-LT8301IS5TRPBF-Level_A" H 3925 3000 50  0001 L CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/8301f.pdf" H 3925 3100 50  0001 L CNN
+F 4 "Manufacturer URL" H 3925 3200 50  0001 L CNN "Component Link 1 Description"
+F 5 "http://www.linear.com/" H 3925 3300 50  0001 L CNN "Component Link 1 URL"
+F 6 "Package Specification" H 3925 3400 50  0001 L CNN "Component Link 3 Description"
+F 7 "http://cds.linear.com/docs/en/packaging/SOT_5_05-08-1635.pdf" H 3925 3500 50  0001 L CNN "Component Link 3 URL"
+F 8 "02/2014" H 3925 3600 50  0001 L CNN "Datasheet Version"
+F 9 "1.375 A Typ." H 3925 3700 50  0001 L CNN "ISW MAX"
+F 10 "Surface Mount" H 3925 3800 50  0001 L CNN "Mounting Technology"
+F 11 "5-Pin Small Out-Line Transistor, Body 2.9 x 1.625 mm, Pitch 0.95 mm" H 3925 3900 50  0001 L CNN "Package Description"
+F 12 "06/2010" H 3925 4000 50  0001 L CNN "Package Version"
+F 13 "Tape and Reel" H 3925 4100 50  0001 L CNN "Packing"
+F 14 "0.4 Ohm Typ." H 3925 4200 50  0001 L CNN "RDS ON"
+F 15 "-40 to 125 degC" H 3925 4300 50  0001 L CNN "Temperature Range"
+F 16 "2.7 to 42 V" H 3925 4400 50  0001 L CNN "VIN"
+F 17 "IC" H 3925 4500 50  0001 L CNN "category"
+F 18 "15159575" H 3925 4600 50  0001 L CNN "ciiva ids"
+F 19 "3393e6b439a30787" H 3925 4700 50  0001 L CNN "library id"
+F 20 "Linear Technology" H 3925 4800 50  0001 L CNN "manufacturer"
+F 21 "1431326942" H 3925 4900 50  0001 L CNN "release date"
+F 22 "Yes" H 3925 5000 50  0001 L CNN "rohs"
+F 23 "73DCC253-F43D-4A2E-B540-CD101AA786C0" H 3925 5100 50  0001 L CNN "vault revision"
+F 24 "10 kHz Typ." H 3925 5200 50  0001 L CNN "f MIN"
+F 25 "yes" H 3925 5300 50  0001 L CNN "imported"
+F 26 "170 ns Typ." H 3925 5400 50  0001 L CNN "tON MIN"
+	1    3925 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2300 6550 2300
 $Comp
 L eec:Transformer_1P_2S_WE_750313973 T1
 U 1 1 61AB5502
@@ -343,7 +360,145 @@ F 3 "~" H 5850 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5025 2800 5250 2800
-Text HLabel 5450 2200 0    50   UnSpc ~ 0
-VCC
+	5405 2600 5450 2600
+Connection ~ 5405 2600
+Connection ~ 5450 2600
+Wire Wire Line
+	5405 2800 5365 2800
+$Comp
+L power:GND1 #PWR0122
+U 1 1 61B25BC7
+P 5025 3000
+F 0 "#PWR0122" H 5025 2750 50  0001 C CNN
+F 1 "GND1" H 5030 2827 50  0000 C CNN
+F 2 "" H 5025 3000 50  0001 C CNN
+F 3 "" H 5025 3000 50  0001 C CNN
+	1    5025 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0123
+U 1 1 61B27FA1
+P 3850 3000
+F 0 "#PWR0123" H 3850 2750 50  0001 C CNN
+F 1 "GND1" H 3855 2827 50  0000 C CNN
+F 2 "" H 3850 3000 50  0001 C CNN
+F 3 "" H 3850 3000 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0124
+U 1 1 61B2C607
+P 3625 2900
+F 0 "#PWR0124" H 3625 2650 50  0001 C CNN
+F 1 "GND1" H 3630 2727 50  0000 C CNN
+F 2 "" H 3625 2900 50  0001 C CNN
+F 3 "" H 3625 2900 50  0001 C CNN
+	1    3625 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0125
+U 1 1 61B30ABE
+P 4575 4300
+F 0 "#PWR0125" H 4575 4050 50  0001 C CNN
+F 1 "GND1" H 4580 4127 50  0000 C CNN
+F 2 "" H 4575 4300 50  0001 C CNN
+F 3 "" H 4575 4300 50  0001 C CNN
+	1    4575 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0126
+U 1 1 61B314CB
+P 5200 4325
+F 0 "#PWR0126" H 5200 4075 50  0001 C CNN
+F 1 "GND1" H 5205 4152 50  0000 C CNN
+F 2 "" H 5200 4325 50  0001 C CNN
+F 3 "" H 5200 4325 50  0001 C CNN
+	1    5200 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0127
+U 1 1 61B31993
+P 5600 4325
+F 0 "#PWR0127" H 5600 4075 50  0001 C CNN
+F 1 "GND1" H 5605 4152 50  0000 C CNN
+F 2 "" H 5600 4325 50  0001 C CNN
+F 3 "" H 5600 4325 50  0001 C CNN
+	1    5600 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0128
+U 1 1 61B323EE
+P 5975 4475
+F 0 "#PWR0128" H 5975 4225 50  0001 C CNN
+F 1 "GND1" H 5980 4302 50  0000 C CNN
+F 2 "" H 5975 4475 50  0001 C CNN
+F 3 "" H 5975 4475 50  0001 C CNN
+	1    5975 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 61B342D8
+P 5975 4025
+F 0 "#PWR0129" H 5975 3875 50  0001 C CNN
+F 1 "+3.3V" H 5990 4198 50  0000 C CNN
+F 2 "" H 5975 4025 50  0001 C CNN
+F 3 "" H 5975 4025 50  0001 C CNN
+	1    5975 4025
+	1    0    0    -1  
+$EndComp
+Connection ~ 5975 4025
+$Comp
+L power:+VDC #PWR0131
+U 1 1 61B63F6A
+P 3625 2600
+F 0 "#PWR0131" H 3625 2500 50  0001 C CNN
+F 1 "+VDC" H 3625 2875 50  0000 C CNN
+F 2 "" H 3625 2600 50  0001 C CNN
+F 3 "" H 3625 2600 50  0001 C CNN
+	1    3625 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3625 2600
+$Comp
+L power:+VDC #PWR0132
+U 1 1 61B643D8
+P 3550 3825
+F 0 "#PWR0132" H 3550 3725 50  0001 C CNN
+F 1 "+VDC" H 3550 4100 50  0000 C CNN
+F 2 "" H 3550 3825 50  0001 C CNN
+F 3 "" H 3550 3825 50  0001 C CNN
+	1    3550 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR0134
+U 1 1 61B673BB
+P 5450 2200
+F 0 "#PWR0134" H 5450 2100 50  0001 C CNN
+F 1 "+VDC" V 5450 2429 50  0000 L CNN
+F 2 "" H 5450 2200 50  0001 C CNN
+F 3 "" H 5450 2200 50  0001 C CNN
+	1    5450 2200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5450 2200
+$Comp
+L power:+3.3VP #PWR0166
+U 1 1 61C36381
+P 7270 2000
+F 0 "#PWR0166" H 7420 1950 50  0001 C CNN
+F 1 "+3.3VP" V 7285 2128 50  0000 L CNN
+F 2 "" H 7270 2000 50  0001 C CNN
+F 3 "" H 7270 2000 50  0001 C CNN
+	1    7270 2000
+	0    1    1    0   
+$EndComp
+Connection ~ 7270 2000
 $EndSCHEMATC

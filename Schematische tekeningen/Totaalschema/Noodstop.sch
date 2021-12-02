@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -116,8 +116,6 @@ F 3 "~" H 6350 3100 50  0001 C CNN
 	1    6350 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6250 3000 6250 3100
 Connection ~ 6250 3100
 Wire Wire Line
 	6250 3100 6250 3200
@@ -204,26 +202,8 @@ F 3 "" H 6450 3100 50  0001 C CNN
 $EndComp
 Text HLabel 4000 3550 0    50   Input ~ 0
 Noodstop
-Text HLabel 4250 3750 0    50   Input ~ 0
-VSS
-Text HLabel 4850 3800 2    50   Input ~ 0
-VSS_ISO
-Text HLabel 6250 3450 2    50   Input ~ 0
-VSS_ISO
 Wire Wire Line
 	6250 3450 6250 3400
-Text HLabel 6250 3000 2    50   Input ~ 0
-VCC_ISO
-Text HLabel 6700 3050 2    50   Input ~ 0
-VCC_ISO
-Text HLabel 7900 3400 0    50   Input ~ 0
-VCC_ISO
-Text HLabel 7900 3200 0    50   Input ~ 0
-VSS_ISO
-Text HLabel 4300 3050 2    50   Input ~ 0
-VSS_ISO
-Text HLabel 4000 3250 0    50   Input ~ 0
-VCC
 Text Notes 7500 3850 0    50   ~ 0
 NO contact verbinden met VCC\nzodat als de schakelaar ingedrukt wordt de lijn hoog wordt
 Text Notes 7500 4050 0    50   ~ 0
@@ -241,10 +221,6 @@ F 3 "~" H 6000 3200 50  0001 C CNN
 	1    6000 3200
 	-1   0    0    1   
 $EndComp
-Text HLabel 6000 3100 1    50   Input ~ 0
-VCC_ISO
-Text HLabel 6700 3550 0    50   Input ~ 0
-VSS_ISO
 Wire Wire Line
 	6700 3350 6550 3350
 Wire Wire Line
@@ -303,8 +279,6 @@ F 3 "~" H 5025 4400 50  0001 C CNN
 	1    5025 4400
 	-1   0    0    1   
 $EndComp
-Text HLabel 5025 4300 2    50   Input ~ 0
-VCC_ISO
 $Comp
 L Device:R_Small R41
 U 1 1 61A69F75
@@ -321,8 +295,6 @@ Wire Wire Line
 Connection ~ 5200 4900
 Wire Wire Line
 	5200 4900 5175 4900
-Text HLabel 5200 5100 2    50   Input ~ 0
-VSS_ISO
 $Comp
 L Device:R_Small R36
 U 1 1 61A71D7F
@@ -334,19 +306,191 @@ F 3 "~" H 4275 4800 50  0001 C CNN
 	1    4275 4800
 	1    0    0    -1  
 $EndComp
-Text HLabel 4275 4500 0    50   Input ~ 0
-VCC
 Text HLabel 4275 4700 0    50   Input ~ 0
 Noodstop_ext
 Wire Wire Line
 	4275 4900 4275 4925
-Text HLabel 4275 4925 0    50   Input ~ 0
-VSS
-Text HLabel 4875 5100 3    50   Input ~ 0
-VSS_ISO
 Wire Wire Line
 	4875 4500 5025 4500
 Wire Wire Line
 	5250 3300 6000 3300
 Connection ~ 6000 3300
+$Comp
+L power:GNDS #PWR0106
+U 1 1 61BE4256
+P 6250 3450
+F 0 "#PWR0106" H 6250 3200 50  0001 C CNN
+F 1 "GNDS" H 6255 3277 50  0000 C CNN
+F 2 "" H 6250 3450 50  0001 C CNN
+F 3 "" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0110
+U 1 1 61BE48CA
+P 6700 3550
+F 0 "#PWR0110" H 6700 3300 50  0001 C CNN
+F 1 "GNDS" H 6705 3377 50  0000 C CNN
+F 2 "" H 6700 3550 50  0001 C CNN
+F 3 "" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3000 6250 3100
+$Comp
+L power:GNDS #PWR0169
+U 1 1 61BE8DD6
+P 4300 3050
+F 0 "#PWR0169" H 4300 2800 50  0001 C CNN
+F 1 "GNDS" H 4305 2877 50  0000 C CNN
+F 2 "" H 4300 3050 50  0001 C CNN
+F 3 "" H 4300 3050 50  0001 C CNN
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0170
+U 1 1 61BEB9BE
+P 4850 3800
+F 0 "#PWR0170" H 4850 3550 50  0001 C CNN
+F 1 "GNDS" H 4855 3627 50  0000 C CNN
+F 2 "" H 4850 3800 50  0001 C CNN
+F 3 "" H 4850 3800 50  0001 C CNN
+	1    4850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0171
+U 1 1 61BF1EB5
+P 4250 3750
+F 0 "#PWR0171" H 4250 3500 50  0001 C CNN
+F 1 "GND1" H 4255 3577 50  0000 C CNN
+F 2 "" H 4250 3750 50  0001 C CNN
+F 3 "" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0172
+U 1 1 61BF361B
+P 4000 3250
+F 0 "#PWR0172" H 4000 3100 50  0001 C CNN
+F 1 "+3.3V" H 4015 3423 50  0000 C CNN
+F 2 "" H 4000 3250 50  0001 C CNN
+F 3 "" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0174
+U 1 1 61BF9F80
+P 5200 5100
+F 0 "#PWR0174" H 5200 4850 50  0001 C CNN
+F 1 "GNDS" H 5205 4927 50  0000 C CNN
+F 2 "" H 5200 5100 50  0001 C CNN
+F 3 "" H 5200 5100 50  0001 C CNN
+	1    5200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0175
+U 1 1 61BFD78C
+P 4875 5100
+F 0 "#PWR0175" H 4875 4850 50  0001 C CNN
+F 1 "GNDS" H 4880 4927 50  0000 C CNN
+F 2 "" H 4875 5100 50  0001 C CNN
+F 3 "" H 4875 5100 50  0001 C CNN
+	1    4875 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0176
+U 1 1 61BFF9F4
+P 4275 4925
+F 0 "#PWR0176" H 4275 4675 50  0001 C CNN
+F 1 "GND1" H 4280 4752 50  0000 C CNN
+F 2 "" H 4275 4925 50  0001 C CNN
+F 3 "" H 4275 4925 50  0001 C CNN
+	1    4275 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L eec:+3.3V_IO1 #PWR0177
+U 1 1 61C0A870
+P 4275 4500
+F 0 "#PWR0177" H 4425 4450 50  0001 C CNN
+F 1 "+3.3V_IO1" V 4290 4628 50  0000 L CNN
+F 2 "" H 4275 4500 50  0001 C CNN
+F 3 "" H 4275 4500 50  0001 C CNN
+	1    4275 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDS #PWR0178
+U 1 1 61C0E7F5
+P 7900 3200
+F 0 "#PWR0178" H 7900 2950 50  0001 C CNN
+F 1 "GNDS" V 7905 3072 50  0000 R CNN
+F 2 "" H 7900 3200 50  0001 C CNN
+F 3 "" H 7900 3200 50  0001 C CNN
+	1    7900 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VP #PWR0167
+U 1 1 61C3EFB9
+P 5025 4300
+F 0 "#PWR0167" H 5175 4250 50  0001 C CNN
+F 1 "+3.3VP" H 5040 4473 50  0000 C CNN
+F 2 "" H 5025 4300 50  0001 C CNN
+F 3 "" H 5025 4300 50  0001 C CNN
+	1    5025 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0168
+U 1 1 61C3FFCA
+P 6000 3100
+F 0 "#PWR0168" H 6150 3050 50  0001 C CNN
+F 1 "+3.3VP" H 6015 3273 50  0000 C CNN
+F 2 "" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0173
+U 1 1 61C41A5A
+P 6250 3000
+F 0 "#PWR0173" H 6400 2950 50  0001 C CNN
+F 1 "+3.3VP" H 6265 3173 50  0000 C CNN
+F 2 "" H 6250 3000 50  0001 C CNN
+F 3 "" H 6250 3000 50  0001 C CNN
+	1    6250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0179
+U 1 1 61C42663
+P 6700 3050
+F 0 "#PWR0179" H 6850 3000 50  0001 C CNN
+F 1 "+3.3VP" H 6715 3223 50  0000 C CNN
+F 2 "" H 6700 3050 50  0001 C CNN
+F 3 "" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0180
+U 1 1 61C42F93
+P 7900 3400
+F 0 "#PWR0180" H 8050 3350 50  0001 C CNN
+F 1 "+3.3VP" V 7915 3528 50  0000 L CNN
+F 2 "" H 7900 3400 50  0001 C CNN
+F 3 "" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

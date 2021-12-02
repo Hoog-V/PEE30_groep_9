@@ -1,6 +1,21 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# +3.3V_IO1-eec
+#
+DEF +3.3V_IO1-eec #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 150 -50 50 H I C CNN
+F1 "+3.3V_IO1-eec" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3.3V_IO1 1 0 0 0 U 50 50 0 0 W N
+ENDDRAW
+ENDDEF
+#
 # MSP430FR2476TPTR-SamacSys_Parts
 #
 DEF MSP430FR2476TPTR-SamacSys_Parts IC 0 30 Y Y 1 F N
