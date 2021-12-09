@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/Libs/SamacSys_Parts.pretty)(options "")(descr ""))
+  (lib (name eec)(type KiCad)(uri ${KIPRJMOD}/Libs/eec.pretty)(options "")(descr ""))
+  (lib (name 744042100)(type KiCad)(uri ${KIPRJMOD}/Libs/744042100.pretty)(options "")(descr ""))
+)

@@ -7,4 +7,5 @@
   (lib (name 2021-11-20_15-16-38)(type Legacy)(uri ${KIPRJMOD}/Libs/2021-11-20_15-16-38.lib)(options "")(descr ""))
   (lib (name 2021-11-20_15-23-40)(type Legacy)(uri ${KIPRJMOD}/Libs/2021-11-20_15-23-40.lib)(options "")(descr ""))
   (lib (name ISO6721QDWVRQ1)(type Legacy)(uri ${KIPRJMOD}/Libs/ISO6721QDWVRQ1.lib)(options "")(descr ""))
+  (lib (name transformer_1p_2s_we_750313973)(type Legacy)(uri "/home/victor/PEE30_groep_9/Schematische tekeningen/Voeding/Libs/transformer_1p_2s_we_750313973.lib")(options "")(descr ""))
 )

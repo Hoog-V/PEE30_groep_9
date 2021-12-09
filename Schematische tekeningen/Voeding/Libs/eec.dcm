@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +3.3V_IO1
+D Power symbol creates a global label with name "+3.3VP"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_IO2
+D Power symbol creates a global label with name "+3.3VP"
+K power-flag
+$ENDCMP
+#
+$CMP 74AUP1G58
+D 74LAUP1G58, Configurable Multi-Function Single Gate, Low-Voltage CMOS
+K Configurable Single Gate LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUP1G98
+D Configurable Multi-Function Single Gate, Low-Voltage CMOS
+K Configurable Single Gate LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G58_C
+D Configurable Multi-Function Single Gate, Low-Voltage CMOS
+K Configurable Single Gate LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G98
+D Configurable Multi-Function Single Gate, Low-Voltage CMOS
+K Configurable Single Gate LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP Transformer_1P_2S_WE_750313973
+D Transformer, single primary, dual secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+#End Doc Library
