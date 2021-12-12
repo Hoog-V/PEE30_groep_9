@@ -154,8 +154,6 @@ Text GLabel 1600 3225 0    50   Input ~ 0
 ADC_FBK_DC_DC
 Text GLabel 1600 3325 0    50   Input ~ 0
 ADC_INGANGSSTROOM
-Text GLabel 3100 6125 3    50   Input ~ 0
-ADC_UIT_STROOM
 Text GLabel 3400 925  1    50   Input ~ 0
 Status_belasting
 Text GLabel 3300 925  1    50   Input ~ 0
@@ -1070,4 +1068,6 @@ F 3 "" H 10575 5325 50  0001 C CNN
 	1    10575 5325
 	0    -1   -1   0   
 $EndComp
+Text GLabel 3100 6125 3    50   Input ~ 0
+ADC_UIT_STROOM
 $EndSCHEMATC
