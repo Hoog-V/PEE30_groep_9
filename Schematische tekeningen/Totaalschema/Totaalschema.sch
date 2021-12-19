@@ -150,9 +150,9 @@ Text GLabel 3900 925  1    50   BiDi ~ 0
 I2C_SDA
 Text GLabel 3800 925  1    50   BiDi ~ 0
 I2C_SCL
-Text GLabel 1600 3225 0    50   Input ~ 0
+Text GLabel 2900 6125 3    50   Input ~ 0
 ADC_FBK_DC_DC
-Text GLabel 1600 3325 0    50   Input ~ 0
+Text GLabel 3000 6125 3    50   Input ~ 0
 ADC_INGANGSSTROOM
 Text GLabel 3400 925  1    50   Input ~ 0
 Status_belasting
@@ -215,8 +215,6 @@ F 3 "~" H 8725 6175 50  0001 C CNN
 	1    8725 6175
 	0    1    1    0   
 $EndComp
-Text GLabel 7605 6179 2    50   Input ~ 0
-Snelheidssensor
 Text GLabel 1600 3625 0    50   Input ~ 0
 Status_MCU
 $Sheet
@@ -268,39 +266,23 @@ Text GLabel 10275 4200 2    50   Output ~ 0
 Status_aandrijving_ISO_M
 Text GLabel 10275 4275 2    50   Output ~ 0
 Status_aandrijving_ISO_B
-Text GLabel 10275 4400 2    50   Input ~ 0
-Status_MCU_ISO
 Text GLabel 10275 4525 2    50   Input ~ 0
 Start_MCU_ISO
-Text GLabel 10275 4650 2    50   Input ~ 0
-Status_belasting_ISO
-Text GLabel 10575 5425 0    50   BiDi ~ 0
+Text GLabel 10045 5295 0    50   BiDi ~ 0
 I2C_SDA_ISO
-Text GLabel 10575 5525 0    50   BiDi ~ 0
+Text GLabel 10045 5395 0    50   BiDi ~ 0
 I2C_SCL_ISO
-Text GLabel 10575 5625 0    50   Output ~ 0
-Belasting_TX_ISO
-Text GLabel 10575 5725 0    50   Input ~ 0
-Belasting_RX_ISO
-Text GLabel 10575 5825 0    50   Input ~ 0
+Text GLabel 10490 5495 0    50   Input ~ 0
 Status_aandrijving_ISO_M
-Text GLabel 10575 5925 0    50   Input ~ 0
-Status_aandrijving_ISO_B
-Text GLabel 10575 6025 0    50   Output ~ 0
-Status_MCU_ISO
-Text GLabel 10575 6125 0    50   Output ~ 0
-Start_MCU_ISO
-Text GLabel 10575 6225 0    50   Output ~ 0
-Status_belasting_ISO
 $Comp
 L power:GNDS #PWR038
 U 1 1 618CA3DB
-P 10575 6425
-F 0 "#PWR038" H 10575 6175 50  0001 C CNN
-F 1 "GNDS" H 10580 6252 50  0000 C CNN
-F 2 "" H 10575 6425 50  0001 C CNN
-F 3 "" H 10575 6425 50  0001 C CNN
-	1    10575 6425
+P 10160 5205
+F 0 "#PWR038" H 10160 4955 50  0001 C CNN
+F 1 "GNDS" H 10165 5032 50  0000 C CNN
+F 2 "" H 10160 5205 50  0001 C CNN
+F 3 "" H 10160 5205 50  0001 C CNN
+	1    10160 5205
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -310,59 +292,15 @@ F0 "Voeding_ISO_3.3V" 50
 F1 "Voeding.sch" 50
 $EndSheet
 $Comp
-L Connector:Conn_01x01_Male J2
-U 1 1 61873AE4
-P 10600 2125
-F 0 "J2" H 10708 2306 50  0000 C CNN
-F 1 "Labconnector +" H 10708 2215 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10600 2125 50  0001 C CNN
-F 3 "~" H 10600 2125 50  0001 C CNN
-	1    10600 2125
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J3
-U 1 1 61876AC9
-P 10600 2400
-F 0 "J3" H 10708 2581 50  0000 C CNN
-F 1 "Labconnector -" H 10708 2490 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10600 2400 50  0001 C CNN
-F 3 "~" H 10600 2400 50  0001 C CNN
-	1    10600 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x01_Male J5
 U 1 1 6187B9EB
-P 11000 1450
-F 0 "J5" H 10972 1382 50  0000 R CNN
-F 1 "Motor-" H 10972 1473 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 11000 1450 50  0001 C CNN
-F 3 "~" H 11000 1450 50  0001 C CNN
-	1    11000 1450
+P 10035 1545
+F 0 "J5" H 10007 1477 50  0000 R CNN
+F 1 "Motor-" H 10007 1568 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10035 1545 50  0001 C CNN
+F 3 "~" H 10035 1545 50  0001 C CNN
+	1    10035 1545
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR015
-U 1 1 618649B0
-P 7176 5749
-F 0 "#PWR015" H 7176 5599 50  0001 C CNN
-F 1 "+3.3V" V 7191 5922 50  0000 C CNN
-F 2 "" H 7176 5749 50  0001 C CNN
-F 3 "" H 7176 5749 50  0001 C CNN
-	1    7176 5749
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 6186B198
-P 6325 5825
-F 0 "R2" V 6250 5775 50  0000 L CNN
-F 1 "1k" V 6400 5775 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6325 5825 50  0001 C CNN
-F 3 "~" H 6325 5825 50  0001 C CNN
-	1    6325 5825
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	8875 6175 8825 6175
@@ -449,51 +387,6 @@ Wire Wire Line
 	5450 6450 5450 6475
 Connection ~ 5450 6475
 $Comp
-L Connector:Conn_01x01_Male J6
-U 1 1 619B1A97
-P 11025 775
-F 0 "J6" H 10997 707 50  0000 R CNN
-F 1 "Motor+" H 10997 798 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 11025 775 50  0001 C CNN
-F 3 "~" H 11025 775 50  0001 C CNN
-	1    11025 775 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9325 750  9150 750 
-Text GLabel 9325 1150 0    50   Output ~ 0
-ADC_FBK_DC_DC
-Text GLabel 9325 1050 0    50   Output ~ 0
-ADC_UIT_STROOM
-Text GLabel 9325 950  0    50   Output ~ 0
-ADC_INGANGSSTROOM
-Text GLabel 9325 1300 0    50   Input ~ 0
-PWM_HI
-Text GLabel 9325 1400 0    50   Input ~ 0
-PWM_LO
-$Comp
-L power:+3.3V #PWR026
-U 1 1 619D1DF5
-P 9225 850
-F 0 "#PWR026" H 9225 700 50  0001 C CNN
-F 1 "+3.3V" V 9240 978 50  0000 L CNN
-F 2 "" H 9225 850 50  0001 C CNN
-F 3 "" H 9225 850 50  0001 C CNN
-	1    9225 850 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9225 850  9325 850 
-Wire Wire Line
-	9325 1635 9050 1635
-Wire Wire Line
-	9050 1710 9325 1710
-Wire Wire Line
-	9050 1635 9050 1710
-Wire Wire Line
-	9050 1710 9050 1735
-Connection ~ 9050 1710
-$Comp
 L Totaalschema-rescue:MSP430FR2476TPTR-SamacSys_Parts IC1
 U 1 1 617B1AE3
 P 1600 2725
@@ -510,87 +403,14 @@ F 9 "MSP430FR2476TPTR" H 5250 3625 50  0001 L CNN "Manufacturer_Part_Number"
 	1    1600 2725
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 9050 2400 950  800 
-U 61AC06EB
-F0 "Noodstop" 50
-F1 "Noodstop.sch" 50
-F2 "Noodstop" I L 9050 3000 50 
-F3 "Noodstop_ringbus" I R 10000 2650 50 
-F4 "Noodstop_ext" I L 9050 3100 50 
-$EndSheet
-Text GLabel 9050 3000 0    50   Input ~ 0
+Text GLabel 8650 3050 0    50   Input ~ 0
 Noodstop
-$Comp
-L Connector:Conn_01x12_Male J7
-U 1 1 61B88C21
-P 10775 5825
-F 0 "J7" H 10747 5799 50  0000 R CNN
-F 1 "Breakoutbord" H 10747 5708 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 10775 5825 50  0001 C CNN
-F 3 "~" H 10775 5825 50  0001 C CNN
-	1    10775 5825
-	-1   0    0    -1  
-$EndComp
-Text GLabel 10575 6325 0    50   BiDi ~ 0
+Text GLabel 10490 5095 0    50   BiDi ~ 0
 Noodstop_ringbus
-Text GLabel 10000 2650 2    50   BiDi ~ 0
-Noodstop_ringbus
-Text GLabel 9050 3100 0    50   Input ~ 0
+Text GLabel 8650 3150 0    50   Input ~ 0
 Noodstop_ext
 Text GLabel 5400 2725 2    50   Input ~ 0
 Noodstop_ext
-$Comp
-L eec:Snelheidssensor U14
-U 1 1 61B36579
-P 6675 5750
-F 0 "U14" H 7053 6013 50  0000 L CNN
-F 1 "Snelheidssensor" H 7053 5922 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6825 5750 50  0001 C CNN
-F 3 "" H 6825 5750 50  0001 C CNN
-	1    6675 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6425 5750 6425 5825
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 61B5C290
-P 6225 5825
-F 0 "#PWR0101" H 6225 5675 50  0001 C CNN
-F 1 "+3.3V" H 6240 5998 50  0000 C CNN
-F 2 "" H 6225 5825 50  0001 C CNN
-F 3 "" H 6225 5825 50  0001 C CNN
-	1    6225 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 61B6E3BF
-P 7076 5749
-F 0 "R3" V 7144 5707 50  0000 L CNN
-F 1 "1k" V 7012 5721 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7076 5749 50  0001 C CNN
-F 3 "~" H 7076 5749 50  0001 C CNN
-	1    7076 5749
-	0    1    1    0   
-$EndComp
-Connection ~ 6976 5749
-$Comp
-L 74xx:74HC14 U1
-U 4 1 61A48DE3
-P 7305 6179
-F 0 "U1" H 7305 6496 50  0000 C CNN
-F 1 "74HC14" H 7305 6405 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 7305 6179 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 7305 6179 50  0001 C CNN
-	4    7305 6179
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6976 6179 7005 6179
-Wire Wire Line
-	6976 5749 6976 6179
 Wire Wire Line
 	7225 4600 7425 4600
 $Comp
@@ -604,63 +424,12 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6925 4600 50  0001 C CNN
 	2    6925 4600
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector:Conn_01x20_Male J10
-U 1 1 61D38A54
-P 5750 1550
-F 0 "J10" H 5858 2631 50  0000 C CNN
-F 1 "ALL GPIO_1" H 5858 2540 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 5750 1550 50  0001 C CNN
-F 3 "~" H 5750 1550 50  0001 C CNN
-	1    5750 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x20_Male J11
-U 1 1 61D568EF
-P 6850 1550
-F 0 "J11" H 6958 2631 50  0000 C CNN
-F 1 "ALL GPIO_2" H 6958 2540 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 6850 1550 50  0001 C CNN
-F 3 "~" H 6850 1550 50  0001 C CNN
-	1    6850 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR042
-U 1 1 61E3D1BF
-P 5950 1550
-F 0 "#PWR042" H 5950 1400 50  0001 C CNN
-F 1 "+3.3V" V 5965 1678 50  0000 L CNN
-F 2 "" H 5950 1550 50  0001 C CNN
-F 3 "" H 5950 1550 50  0001 C CNN
-	1    5950 1550
-	0    1    1    0   
-$EndComp
-Text GLabel 5950 1650 2    50   Input ~ 0
-MCURST-SWBTDIO
-Text GLabel 5950 1750 2    50   Input ~ 0
-SBWTCK
-Text GLabel 5950 1850 2    50   Output ~ 0
-Belasting_TX
-Text GLabel 5950 1950 2    50   Input ~ 0
-Belasting_RX
-Text GLabel 5950 2050 2    50   Input ~ 0
-ADC_FBK_DC_DC
-Text GLabel 5950 2150 2    50   Input ~ 0
-ADC_INGANGSSTROOM
 Text GLabel 1600 3425 0    50   Input ~ 0
 P4.3
 Text GLabel 1600 3525 0    50   Input ~ 0
 P4.4
 Text GLabel 1600 3725 0    50   Input ~ 0
 P5.4
-Text GLabel 1600 3825 0    50   Input ~ 0
-P1.0
-Text GLabel 2900 6125 3    50   Input ~ 0
-P1.1
-Text GLabel 3000 6125 3    50   Input ~ 0
-P1.2
 Text GLabel 3300 6125 3    50   Input ~ 0
 P4.5
 Text GLabel 3600 6125 3    50   Input ~ 0
@@ -691,147 +460,6 @@ Text GLabel 3600 925  1    50   Input ~ 0
 P6.2
 Text GLabel 3500 925  1    50   Input ~ 0
 P4.7
-Text GLabel 5950 1450 2    50   Output ~ 0
-Display_RST
-Text GLabel 5950 1350 2    50   Input ~ 0
-Snelheidssensor
-Text GLabel 5950 1250 2    50   Output ~ 0
-Status_aandrijving
-Text GLabel 5950 1150 2    50   Input ~ 0
-P4.7
-Text GLabel 5950 1050 2    50   Input ~ 0
-P6.2
-Text GLabel 5950 950  2    50   Input ~ 0
-P6.1
-Text GLabel 5950 850  2    50   BiDi ~ 0
-I2C_SCL
-Text GLabel 5950 750  2    50   BiDi ~ 0
-I2C_SDA
-Text GLabel 5950 650  2    50   Input ~ 0
-P3.5
-Text GLabel 5950 2250 2    50   Input ~ 0
-P1.1
-Text GLabel 5950 2350 2    50   Input ~ 0
-P1.2
-Text GLabel 5950 2450 2    50   Input ~ 0
-ADC_UIT_STROOM
-Text GLabel 5950 2550 2    50   Output ~ 0
-Display_CS
-Text GLabel 7050 2550 2    50   Input ~ 0
-P4.5
-Text GLabel 7050 2450 2    50   Output ~ 0
-DISPLAY_SPI_DIN
-Text GLabel 7050 2350 2    50   Output ~ 0
-DISPLAY_SCK
-Text GLabel 7050 2250 2    50   Input ~ 0
-P5.6
-Text GLabel 7050 2150 2    50   Input ~ 0
-P5.7
-Text GLabel 7050 2050 2    50   Input ~ 0
-P6.0
-Text GLabel 7050 1950 2    50   Output ~ 0
-PWM_HI
-Text GLabel 7050 1850 2    50   Output ~ 0
-PWM_LO
-Text GLabel 7050 1750 2    50   Output ~ 0
-Display_DC
-Text GLabel 7050 1650 2    50   Input ~ 0
-P3.4
-Text GLabel 7050 1550 2    50   Input ~ 0
-P3.1
-Text GLabel 7050 1450 2    50   Input ~ 0
-Noodstop
-Text GLabel 7050 1350 2    50   Input ~ 0
-P2.5
-Text GLabel 7050 1250 2    50   Input ~ 0
-P2.6
-Text GLabel 7050 1150 2    50   Input ~ 0
-P3.7
-Text GLabel 7050 1050 2    50   Output ~ 0
-PWM_SD
-Text GLabel 7050 950  2    50   Input ~ 0
-P4.1
-Text GLabel 7050 850  2    50   Input ~ 0
-P4.2
-Text GLabel 7050 750  2    50   Input ~ 0
-Noodstop_ext
-Wire Wire Line
-	7345 485  7255 485 
-Wire Wire Line
-	7255 485  7255 650 
-Wire Wire Line
-	7255 650  7050 650 
-Wire Wire Line
-	7345 485  7345 490 
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J12
-U 1 1 61F877CC
-P 7840 1015
-F 0 "J12" H 7890 1432 50  0000 C CNN
-F 1 "3.3V pwr" H 7890 1341 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical_SMD" H 7840 1015 50  0001 C CNN
-F 3 "~" H 7840 1015 50  0001 C CNN
-	1    7840 1015
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7640 1315 7640 1215
-Connection ~ 7640 915 
-Wire Wire Line
-	7640 915  7640 815 
-Connection ~ 7640 1015
-Wire Wire Line
-	7640 1015 7640 915 
-Connection ~ 7640 1115
-Wire Wire Line
-	7640 1115 7640 1015
-Connection ~ 7640 1215
-Wire Wire Line
-	7640 1215 7640 1115
-$Comp
-L power:+3.3V #PWR045
-U 1 1 61F951D5
-P 8140 815
-F 0 "#PWR045" H 8140 665 50  0001 C CNN
-F 1 "+3.3V" H 8025 1005 50  0000 L CNN
-F 2 "" H 8140 815 50  0001 C CNN
-F 3 "" H 8140 815 50  0001 C CNN
-	1    8140 815 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8140 815  8140 915 
-Connection ~ 8140 815 
-Connection ~ 8140 915 
-Wire Wire Line
-	8140 915  8140 1015
-Connection ~ 8140 1015
-Wire Wire Line
-	8140 1015 8140 1115
-Connection ~ 8140 1115
-Wire Wire Line
-	8140 1115 8140 1215
-Connection ~ 8140 1215
-Wire Wire Line
-	8140 1215 8140 1315
-$Sheet
-S 9325 675  1295 1075
-U 6198ABEC
-F0 "DC-DC_converter" 50
-F1 "DC-DC_converter.sch" 50
-F2 "V+" I L 9325 750 50 
-F3 "VSS" I L 9325 1710 50 
-F4 "In_stroom" O L 9325 950 50 
-F5 "Uit_stroom" O L 9325 1050 50 
-F6 "Uit_spanning" O L 9325 1150 50 
-F7 "Vuit" O R 10620 775 50 
-F8 "PWM_HI" I L 9325 1300 50 
-F9 "PWM_LO" I L 9325 1400 50 
-F10 "VCC_LOGIC" I L 9325 850 50 
-F11 "COM_LOGIC" I L 9325 1635 50 
-$EndSheet
-Wire Wire Line
-	10825 775  10620 775 
 Wire Wire Line
 	3075 7300 3500 7300
 Wire Wire Line
@@ -870,28 +498,6 @@ F 3 "~" H 3700 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND1 #PWR0104
-U 1 1 61B3C3AA
-P 6525 5750
-F 0 "#PWR0104" H 6525 5500 50  0001 C CNN
-F 1 "GND1" H 6530 5577 50  0000 C CNN
-F 2 "" H 6525 5750 50  0001 C CNN
-F 3 "" H 6525 5750 50  0001 C CNN
-	1    6525 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND1 #PWR0105
-U 1 1 61B482F6
-P 6876 5751
-F 0 "#PWR0105" H 6876 5501 50  0001 C CNN
-F 1 "GND1" H 6881 5578 50  0000 C CNN
-F 2 "" H 6876 5751 50  0001 C CNN
-F 3 "" H 6876 5751 50  0001 C CNN
-	1    6876 5751
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND1 #PWR0107
 U 1 1 61B6579C
 P 8575 6175
@@ -914,59 +520,14 @@ F 3 "" H 8875 6275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND1 #PWR0111
-U 1 1 61AAF588
-P 7640 1315
-F 0 "#PWR0111" H 7640 1065 50  0001 C CNN
-F 1 "GND1" H 7645 1142 50  0000 C CNN
-F 2 "" H 7640 1315 50  0001 C CNN
-F 3 "" H 7640 1315 50  0001 C CNN
-	1    7640 1315
-	1    0    0    -1  
-$EndComp
-Connection ~ 7640 1315
-$Comp
-L power:GND1 #PWR0112
-U 1 1 61AB0DCF
-P 7345 490
-F 0 "#PWR0112" H 7345 240 50  0001 C CNN
-F 1 "GND1" H 7350 317 50  0000 C CNN
-F 2 "" H 7345 490 50  0001 C CNN
-F 3 "" H 7345 490 50  0001 C CNN
-	1    7345 490 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND1 #PWR0113
-U 1 1 61AB2264
-P 9050 1735
-F 0 "#PWR0113" H 9050 1485 50  0001 C CNN
-F 1 "GND1" H 9055 1562 50  0000 C CNN
-F 2 "" H 9050 1735 50  0001 C CNN
-F 3 "" H 9050 1735 50  0001 C CNN
-	1    9050 1735
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND1 #PWR0114
 U 1 1 61ABA444
-P 10800 1450
-F 0 "#PWR0114" H 10800 1200 50  0001 C CNN
-F 1 "GND1" H 10805 1277 50  0000 C CNN
-F 2 "" H 10800 1450 50  0001 C CNN
-F 3 "" H 10800 1450 50  0001 C CNN
-	1    10800 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND1 #PWR0115
-U 1 1 61AC0193
-P 10800 2400
-F 0 "#PWR0115" H 10800 2150 50  0001 C CNN
-F 1 "GND1" H 10805 2227 50  0000 C CNN
-F 2 "" H 10800 2400 50  0001 C CNN
-F 3 "" H 10800 2400 50  0001 C CNN
-	1    10800 2400
+P 9835 1545
+F 0 "#PWR0114" H 9835 1295 50  0001 C CNN
+F 1 "GND1" H 9840 1372 50  0000 C CNN
+F 2 "" H 9835 1545 50  0001 C CNN
+F 3 "" H 9835 1545 50  0001 C CNN
+	1    9835 1545
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1035,6 +596,122 @@ F 3 "" H 3995 7300 50  0001 C CNN
 	1    3995 7300
 	1    0    0    -1  
 $EndComp
+Text GLabel 3100 6125 3    50   Input ~ 0
+ADC_UIT_STROOM
+Text GLabel 1600 3825 0    50   Input ~ 0
+Ingangsspanning_unit
+Text GLabel 1600 3325 0    50   Input ~ 0
+P1.7
+Text GLabel 1600 3225 0    50   Input ~ 0
+P1.6
+$Comp
+L power:GND1 #PWR0105
+U 1 1 61B482F6
+P 6876 5751
+F 0 "#PWR0105" H 6876 5501 50  0001 C CNN
+F 1 "GND1" H 6881 5578 50  0000 C CNN
+F 2 "" H 6876 5751 50  0001 C CNN
+F 3 "" H 6876 5751 50  0001 C CNN
+	1    6876 5751
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0104
+U 1 1 61B3C3AA
+P 6525 5750
+F 0 "#PWR0104" H 6525 5500 50  0001 C CNN
+F 1 "GND1" H 6530 5577 50  0000 C CNN
+F 2 "" H 6525 5750 50  0001 C CNN
+F 3 "" H 6525 5750 50  0001 C CNN
+	1    6525 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6976 5749 6976 6179
+Wire Wire Line
+	6976 6179 7005 6179
+$Comp
+L 74xx:74HC14 U1
+U 4 1 61A48DE3
+P 7305 6179
+F 0 "U1" H 7305 6496 50  0000 C CNN
+F 1 "74HC14" H 7305 6405 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 7305 6179 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 7305 6179 50  0001 C CNN
+	4    7305 6179
+	1    0    0    -1  
+$EndComp
+Connection ~ 6976 5749
+$Comp
+L Device:R_Small R3
+U 1 1 61B6E3BF
+P 7076 5749
+F 0 "R3" V 7144 5707 50  0000 L CNN
+F 1 "1k" V 7012 5721 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7076 5749 50  0001 C CNN
+F 3 "~" H 7076 5749 50  0001 C CNN
+	1    7076 5749
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 61B5C290
+P 6225 5825
+F 0 "#PWR0101" H 6225 5675 50  0001 C CNN
+F 1 "+3.3V" H 6240 5998 50  0000 C CNN
+F 2 "" H 6225 5825 50  0001 C CNN
+F 3 "" H 6225 5825 50  0001 C CNN
+	1    6225 5825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 5750 6425 5825
+$Comp
+L eec:Snelheidssensor U14
+U 1 1 61B36579
+P 6675 5750
+F 0 "U14" H 7053 6013 50  0000 L CNN
+F 1 "Snelheidssensor" H 7053 5922 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6825 5750 50  0001 C CNN
+F 3 "" H 6825 5750 50  0001 C CNN
+	1    6675 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 6186B198
+P 6325 5825
+F 0 "R2" V 6250 5775 50  0000 L CNN
+F 1 "1k" V 6400 5775 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6325 5825 50  0001 C CNN
+F 3 "~" H 6325 5825 50  0001 C CNN
+	1    6325 5825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR015
+U 1 1 618649B0
+P 7176 5749
+F 0 "#PWR015" H 7176 5599 50  0001 C CNN
+F 1 "+3.3V" V 7191 5922 50  0000 C CNN
+F 2 "" H 7176 5749 50  0001 C CNN
+F 3 "" H 7176 5749 50  0001 C CNN
+	1    7176 5749
+	0    1    1    0   
+$EndComp
+Text GLabel 7605 6179 2    50   Input ~ 0
+Snelheidssensor
+Text GLabel 9600 2700 2    50   BiDi ~ 0
+Noodstop_ringbus
+$Sheet
+S 8650 2450 950  800 
+U 61AC06EB
+F0 "Noodstop" 50
+F1 "Noodstop.sch" 50
+F2 "Noodstop" I L 8650 3050 50 
+F3 "Noodstop_ringbus" I R 9600 2700 50 
+F4 "Noodstop_ext" I L 8650 3150 50 
+$EndSheet
 $Comp
 L power:+VDC #PWR0109
 U 1 1 61B81B6F
@@ -1047,27 +724,188 @@ F 3 "" H 10800 2125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+VDC #PWR0130
-U 1 1 61B8C70F
-P 9150 750
-F 0 "#PWR0130" H 9150 650 50  0001 C CNN
-F 1 "+VDC" H 9150 1025 50  0000 C CNN
-F 2 "" H 9150 750 50  0001 C CNN
-F 3 "" H 9150 750 50  0001 C CNN
-	1    9150 750 
+L power:GND1 #PWR0115
+U 1 1 61AC0193
+P 10800 2400
+F 0 "#PWR0115" H 10800 2150 50  0001 C CNN
+F 1 "GND1" H 10805 2227 50  0000 C CNN
+F 2 "" H 10800 2400 50  0001 C CNN
+F 3 "" H 10800 2400 50  0001 C CNN
+	1    10800 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3VP #PWR0133
-U 1 1 61C4A4E8
-P 10575 5325
-F 0 "#PWR0133" H 10725 5275 50  0001 C CNN
-F 1 "+3.3VP" V 10590 5453 50  0000 L CNN
-F 2 "" H 10575 5325 50  0001 C CNN
-F 3 "" H 10575 5325 50  0001 C CNN
-	1    10575 5325
+L Connector:Conn_01x01_Male J3
+U 1 1 61876AC9
+P 10600 2400
+F 0 "J3" H 10708 2581 50  0000 C CNN
+F 1 "Labconnector -" H 10708 2490 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10600 2400 50  0001 C CNN
+F 3 "~" H 10600 2400 50  0001 C CNN
+	1    10600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 61873AE4
+P 10600 2125
+F 0 "J2" H 10708 2306 50  0000 C CNN
+F 1 "Labconnector +" H 10708 2215 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10600 2125 50  0001 C CNN
+F 3 "~" H 10600 2125 50  0001 C CNN
+	1    10600 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J6
+U 1 1 619B1A97
+P 10060 870
+F 0 "J6" H 10032 802 50  0000 R CNN
+F 1 "Motor+" H 10032 893 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10060 870 50  0001 C CNN
+F 3 "~" H 10060 870 50  0001 C CNN
+	1    10060 870 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+VDC #PWR0130
+U 1 1 61B8C70F
+P 8185 845
+F 0 "#PWR0130" H 8185 745 50  0001 C CNN
+F 1 "+VDC" H 8185 1120 50  0000 C CNN
+F 2 "" H 8185 845 50  0001 C CNN
+F 3 "" H 8185 845 50  0001 C CNN
+	1    8185 845 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0113
+U 1 1 61AB2264
+P 8085 1830
+F 0 "#PWR0113" H 8085 1580 50  0001 C CNN
+F 1 "GND1" H 8090 1657 50  0000 C CNN
+F 2 "" H 8085 1830 50  0001 C CNN
+F 3 "" H 8085 1830 50  0001 C CNN
+	1    8085 1830
+	1    0    0    -1  
+$EndComp
+Connection ~ 8085 1805
+Wire Wire Line
+	8085 1805 8085 1830
+Wire Wire Line
+	8085 1730 8085 1805
+Wire Wire Line
+	8085 1805 8360 1805
+Wire Wire Line
+	8360 1730 8085 1730
+Wire Wire Line
+	8260 945  8360 945 
+$Comp
+L power:+3.3V #PWR026
+U 1 1 619D1DF5
+P 8260 945
+F 0 "#PWR026" H 8260 795 50  0001 C CNN
+F 1 "+3.3V" V 8275 1073 50  0000 L CNN
+F 2 "" H 8260 945 50  0001 C CNN
+F 3 "" H 8260 945 50  0001 C CNN
+	1    8260 945 
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3100 6125 3    50   Input ~ 0
+Text GLabel 8360 1495 0    50   Input ~ 0
+PWM_LO
+Text GLabel 8360 1395 0    50   Input ~ 0
+PWM_HI
+Text GLabel 8360 1045 0    50   Output ~ 0
+ADC_INGANGSSTROOM
+Text GLabel 8360 1145 0    50   Output ~ 0
 ADC_UIT_STROOM
+Text GLabel 8360 1245 0    50   Output ~ 0
+ADC_FBK_DC_DC
+Wire Wire Line
+	8360 845  8185 845 
+Wire Wire Line
+	9860 870  9655 870 
+$Sheet
+S 8360 770  1295 1075
+U 6198ABEC
+F0 "DC-DC_converter" 50
+F1 "DC-DC_converter.sch" 50
+F2 "V+" I L 8360 845 50 
+F3 "VSS" I L 8360 1805 50 
+F4 "In_stroom" O L 8360 1045 50 
+F5 "Uit_stroom" O L 8360 1145 50 
+F6 "Uit_spanning" O L 8360 1245 50 
+F7 "Vuit" O R 9655 870 50 
+F8 "PWM_HI" I L 8360 1395 50 
+F9 "PWM_LO" I L 8360 1495 50 
+F10 "VCC_LOGIC" I L 8360 945 50 
+F11 "COM_LOGIC" I L 8360 1730 50 
+$EndSheet
+Wire Wire Line
+	10490 5195 10160 5195
+Wire Wire Line
+	10160 5195 10160 5205
+Wire Wire Line
+	10490 5295 10045 5295
+Wire Wire Line
+	10490 5395 10045 5395
+Text GLabel 10275 4400 2    50   Input ~ 0
+Status_MCU_ISO
+Text GLabel 10490 5595 0    50   Output ~ 0
+Status_MCU_ISO
+Wire Wire Line
+	10490 6090 10490 6095
+NoConn ~ 10490 5695
+$Comp
+L Connector:Conn_01x16_Male J?
+U 1 1 61FBFB7A
+P 10690 5795
+F 0 "J?" H 10662 5769 50  0000 R CNN
+F 1 "Breakoutbord" H 10662 5678 50  0000 R CNN
+F 2 "" H 10690 5795 50  0001 C CNN
+F 3 "~" H 10690 5795 50  0001 C CNN
+	1    10690 5795
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10030 6090 0    50   Output ~ 0
+Belasting_TX_ISO
+Text GLabel 10030 6190 0    50   Input ~ 0
+Belasting_RX_ISO
+Text GLabel 10320 6285 0    50   Input ~ 0
+Status_aandrijving_ISO_B
+Text GLabel 10490 5895 0    50   BiDi ~ 0
+Noodstop_ringbus
+Wire Wire Line
+	10030 6090 10030 6095
+Wire Wire Line
+	10030 6095 10490 6095
+Wire Wire Line
+	10030 6190 10490 6190
+Wire Wire Line
+	10490 5995 10160 5995
+$Comp
+L power:GNDS #PWR?
+U 1 1 61F884D7
+P 10160 5995
+F 0 "#PWR?" H 10160 5745 50  0001 C CNN
+F 1 "GNDS" H 10165 5822 50  0000 C CNN
+F 2 "" H 10160 5995 50  0001 C CNN
+F 3 "" H 10160 5995 50  0001 C CNN
+	1    10160 5995
+	1    0    0    -1  
+$EndComp
+Connection ~ 10490 6095
+Wire Wire Line
+	10490 6195 10490 6190
+NoConn ~ 10490 5795
+Wire Wire Line
+	10320 6285 10490 6285
+Wire Wire Line
+	10490 6285 10490 6295
+Text GLabel 10490 6395 0    50   Output ~ 0
+Status_belasting_ISO
+Text GLabel 10275 4650 2    50   Input ~ 0
+Status_belasting_ISO
+NoConn ~ 10490 6495
+NoConn ~ 10490 6595
 $EndSCHEMATC

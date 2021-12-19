@@ -8,6 +8,7 @@ CMD_SRCS += \
 
 C_SRCS += \
 ../Buck_converter.c \
+../Display.c \
 ../I2C.c \
 ../UART.c \
 ../main.c \
@@ -15,6 +16,7 @@ C_SRCS += \
 
 C_DEPS += \
 ./Buck_converter.d \
+./Display.d \
 ./I2C.d \
 ./UART.d \
 ./main.d \
@@ -22,6 +24,7 @@ C_DEPS += \
 
 OBJS += \
 ./Buck_converter.obj \
+./Display.obj \
 ./I2C.obj \
 ./UART.obj \
 ./main.obj \
@@ -29,6 +32,7 @@ OBJS += \
 
 OBJS__QUOTED += \
 "Buck_converter.obj" \
+"Display.obj" \
 "I2C.obj" \
 "UART.obj" \
 "main.obj" \
@@ -36,6 +40,7 @@ OBJS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "Buck_converter.d" \
+"Display.d" \
 "I2C.d" \
 "UART.d" \
 "main.d" \
@@ -43,6 +48,7 @@ C_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../Buck_converter.c" \
+"../Display.c" \
 "../I2C.c" \
 "../UART.c" \
 "../main.c" \

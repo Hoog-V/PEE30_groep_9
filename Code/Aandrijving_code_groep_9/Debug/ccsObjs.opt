@@ -1,1 +1,1 @@
-"./Buck_converter.obj" "./I2C.obj" "./UART.obj" "./main.obj" "./msp430fr2476_basis.obj" "../lnk_msp430fr2476.cmd" -lfrwp_init.a -llibc.a 
+"./Buck_converter.obj" "./Display.obj" "./I2C.obj" "./UART.obj" "./main.obj" "./msp430fr2476_basis.obj" "../lnk_msp430fr2476.cmd" -lfrwp_init.a -llibc.a 

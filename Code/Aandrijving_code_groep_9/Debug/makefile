@@ -9,6 +9,7 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./Buck_converter.obj" \
+"./Display.obj" \
 "./I2C.obj" \
 "./UART.obj" \
 "./main.obj" \
@@ -157,8 +158,8 @@ Aandrijving_code_groep_9.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Buck_converter.obj" "I2C.obj" "UART.obj" "main.obj" "msp430fr2476_basis.obj" 
-	-$(RM) "Buck_converter.d" "I2C.d" "UART.d" "main.d" "msp430fr2476_basis.d" 
+	-$(RM) "Buck_converter.obj" "Display.obj" "I2C.obj" "UART.obj" "main.obj" "msp430fr2476_basis.obj" 
+	-$(RM) "Buck_converter.d" "Display.d" "I2C.d" "UART.d" "main.d" "msp430fr2476_basis.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

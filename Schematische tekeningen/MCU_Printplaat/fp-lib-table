@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/Libs/SamacSys_Parts.pretty)(options "")(descr ""))
+  (lib (name Libs)(type KiCad)(uri ${KIPRJMOD}/Libs.pretty)(options "")(descr ""))
+  (lib (name hardware-bordje)(type KiCad)(uri ${KIPRJMOD}/Libs/SamacSys_Parts.pretty/hardware-bordje.pretty)(options "")(descr ""))
+)

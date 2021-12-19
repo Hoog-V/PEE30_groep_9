@@ -574,11 +574,11 @@ Text GLabel 5250 3900 0    50   Input ~ 0
 In2
 Text GLabel 5250 5900 0    50   Input ~ 0
 In3
-Text GLabel 3650 4450 0    50   Input ~ 0
+Text GLabel 3660 4445 0    50   Input ~ 0
 In1
-Text GLabel 3650 5050 0    50   Input ~ 0
+Text GLabel 3660 4910 0    50   Input ~ 0
 In2
-Text GLabel 4650 5200 2    50   Input ~ 0
+Text GLabel 3670 5355 0    50   Input ~ 0
 In3
 Text GLabel 2350 4750 2    50   Input ~ 0
 Out1
@@ -586,11 +586,11 @@ Text GLabel 2350 4850 2    50   Input ~ 0
 Out2
 Text GLabel 2350 4950 2    50   Input ~ 0
 Out3
-Text GLabel 3650 4600 0    50   Input ~ 0
+Text GLabel 4260 4445 2    50   Input ~ 0
 Out1
-Text GLabel 3650 5200 0    50   Input ~ 0
+Text GLabel 4260 4910 2    50   Input ~ 0
 Out2
-Text GLabel 4650 5350 2    50   Input ~ 0
+Text GLabel 4270 5355 2    50   Input ~ 0
 Out3
 $Comp
 L power:PWR_FLAG #FLG0103
@@ -683,47 +683,6 @@ F 3 "" H 8600 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PEE30_PCB_TTL-rescue:Testcomponent_PEE30-test_library_PEE30 U1
-U 1 1 61B3E169
-P 4250 4200
-F 0 "U1" H 4150 4215 50  0000 C CNN
-F 1 "Testcomponent_PEE30" H 4150 4124 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 4250 4200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4250 4200 50  0001 C CNN
-	1    4250 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND1 #PWR0124
-U 1 1 61C00166
-P 3500 5500
-F 0 "#PWR0124" H 3500 5250 50  0001 C CNN
-F 1 "GND1" H 3505 5327 50  0000 C CNN
-F 2 "" H 3500 5500 50  0001 C CNN
-F 3 "" H 3500 5500 50  0001 C CNN
-	1    3500 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 5350 3500 5350
-Wire Wire Line
-	3500 5350 3500 5500
-$Comp
-L power:+3.3V #PWR0125
-U 1 1 61C038EA
-P 4900 4050
-F 0 "#PWR0125" H 4900 3900 50  0001 C CNN
-F 1 "+3.3V" H 4915 4223 50  0000 C CNN
-F 2 "" H 4900 4050 50  0001 C CNN
-F 3 "" H 4900 4050 50  0001 C CNN
-	1    4900 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 4050 4900 4450
-Wire Wire Line
-	4900 4450 4650 4450
-$Comp
 L Mechanical:MountingHole H3
 U 1 1 61CBA060
 P 3950 2850
@@ -765,6 +724,72 @@ F 1 "MountingHole" H 3350 2455 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 3250 2500 50  0001 C CNN
 F 3 "~" H 3250 2500 50  0001 C CNN
 	1    3250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 1 1 61B3BFD1
+P 3960 4445
+F 0 "U1" H 3960 4762 50  0000 C CNN
+F 1 "74HC14" H 3960 4671 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3960 4445 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3960 4445 50  0001 C CNN
+	1    3960 4445
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 2 1 61B3D0A3
+P 3960 4910
+F 0 "U1" H 3960 5227 50  0000 C CNN
+F 1 "74HC14" H 3960 5136 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3960 4910 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3960 4910 50  0001 C CNN
+	2    3960 4910
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 3 1 61B78393
+P 3970 5355
+F 0 "U1" H 3970 5672 50  0000 C CNN
+F 1 "74HC14" H 3970 5581 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3970 5355 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3970 5355 50  0001 C CNN
+	3    3970 5355
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 7 1 61B8810A
+P 3145 6240
+F 0 "U1" H 3375 6286 50  0000 L CNN
+F 1 "74HC14" H 3375 6195 50  0000 L CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3145 6240 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3145 6240 50  0001 C CNN
+	7    3145 6240
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR0124
+U 1 1 61B9180D
+P 3145 6740
+F 0 "#PWR0124" H 3145 6490 50  0001 C CNN
+F 1 "GND1" H 3150 6567 50  0000 C CNN
+F 2 "" H 3145 6740 50  0001 C CNN
+F 3 "" H 3145 6740 50  0001 C CNN
+	1    3145 6740
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 61B9335C
+P 3145 5740
+F 0 "#PWR0125" H 3145 5590 50  0001 C CNN
+F 1 "+3.3V" H 3160 5913 50  0000 C CNN
+F 2 "" H 3145 5740 50  0001 C CNN
+F 3 "" H 3145 5740 50  0001 C CNN
+	1    3145 5740
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
